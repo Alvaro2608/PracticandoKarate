@@ -9,6 +9,8 @@ Feature: Test for the home page
     Then status 200
     And match response.tags contains ['Coding', 'Git']
     And match response.tags !contains 'Hola'
+    And match response.tags == "#array"
+    And match each response.tags == "#string"
 #    And match response.tags contains 'Zoom'
 
 
@@ -19,3 +21,4 @@ Feature: Test for the home page
       Given path 'articles'
       When method Get
       Then status 200
+      And match response.articles == '#[10]'
