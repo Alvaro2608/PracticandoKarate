@@ -11,7 +11,7 @@ class ConduitTest {
 
     @Karate.Test
     Karate testAll() {
-         return Karate.run().relativeTo(getClass());
+        return Karate.run().relativeTo(getClass());
     }
 
 }
