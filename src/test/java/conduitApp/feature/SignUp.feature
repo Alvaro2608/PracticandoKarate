@@ -4,7 +4,6 @@ Feature: Sign Up new user
     * def dataGenerator = Java.type('helpers.DataGenerator')
     Given url apiUrl
 
-  @debug
   Scenario: New user Sign Up
 
     * def randomEmail = dataGenerator.getRandomEmail()

@@ -3570,3 +3570,509 @@ classpath:conduitApp/feature/SignUp.feature:26
 1 < Content-Length: 322
 {"user":{"id":31832,"email":"moira11@test.com","username":"jonas.feil","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozMTgzMn0sImlhdCI6MTc1NTA3MDczNywiZXhwIjoxNzYwMjU0NzM3fQ.JXBynF-qIUSFdMbettOGSuOGDePBX_l7PfWDANDU6wc"}}
 
+02:55:46.382 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
+02:55:46.595 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+02:55:47.131 [main] INFO  com.intuit.karate - karate.env system property was: null 
+02:55:47.134 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+02:55:47.336 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 65
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"pruebakarate@test.com","password":"karate123"}}
+
+02:55:48.373 [main] DEBUG com.intuit.karate - response time in milliseconds: 1034
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"13e-UzpuQNlWcwRkVzGlyzOedLLeIcA"
+1 < x-cloud-trace-context: d144fb514fd5abc80f0b013dc6fbabca;o=1
+1 < date: Wed, 13 Aug 2025 07:55:48 GMT
+1 < server: Google Frontend
+1 < Content-Length: 318
+{"user":{"email":"pruebakarate@test.com","username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA3MTc0OCwiZXhwIjoxNzYwMjU1NzQ4fQ.h1u7G7bPgUCGC-H8XfZF-C3du_NRxuMqbBfYv9blJNk"}}
+
+02:55:48.378 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+02:55:48.385 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/articles
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA3MTc0OCwiZXhwIjoxNzYwMjU1NzQ4fQ.h1u7G7bPgUCGC-H8XfZF-C3du_NRxuMqbBfYv9blJNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 117
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"article":{"title":"Creando Articulo80","description":"es una prueba80","body":"practicando Karate80","tagList":[]}}
+
+02:55:49.180 [main] DEBUG com.intuit.karate - response time in milliseconds: 794
+1 < 201
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"195-CZDbhw88nvFyORPmb6SkRt/G3Ps"
+1 < x-cloud-trace-context: cdcb29b72b9d1a530f3c656891090a63
+1 < date: Wed, 13 Aug 2025 07:55:49 GMT
+1 < server: Google Frontend
+1 < Content-Length: 405
+{"article":{"slug":"Creando-Articulo80-13186","title":"Creando Articulo80","description":"es una prueba80","body":"practicando Karate80","tagList":[],"createdAt":"2025-08-13T07:55:49.010Z","updatedAt":"2025-08-13T07:55:49.010Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}}
+
+02:55:49.192 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:13
+And match response.article.title == 'Creando Articulo13'
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'Creando Articulo80'
+  'Creando Articulo13'
+
+classpath:conduitApp/feature/Articles.feature:13
+02:55:49.525 [main] INFO  com.intuit.karate - karate.env system property was: null 
+02:55:49.527 [main] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA3MTc0OCwiZXhwIjoxNzYwMjU1NzQ4fQ.h1u7G7bPgUCGC-H8XfZF-C3du_NRxuMqbBfYv9blJNk
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+02:55:50.270 [main] DEBUG com.intuit.karate - response time in milliseconds: 743
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"65-XAqp9RO5/GurIdusYmbGg8NPW48"
+1 < x-cloud-trace-context: 94d1a89c2b65f70a29b878afec3c9fd6
+1 < date: Wed, 13 Aug 2025 07:55:50 GMT
+1 < server: Google Frontend
+1 < Content-Length: 101
+{"tags":["Test","Git","YouTube","Zoom","Blog","Bondar Academy","Enroll","Exam","Community","GitHub"]}
+
+02:55:50.281 [main] INFO  com.intuit.karate - karate.env system property was: null 
+02:55:50.293 [main] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/articles?limt=10&offset=0
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA3MTc0OCwiZXhwIjoxNzYwMjU1NzQ4fQ.h1u7G7bPgUCGC-H8XfZF-C3du_NRxuMqbBfYv9blJNk
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+02:55:51.223 [main] DEBUG com.intuit.karate - response time in milliseconds: 929
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"19bc-xkiupqLU3rKtTveu0newG9WE3xE"
+1 < x-cloud-trace-context: eb5cddd473ce4b2f5f877a9c98ccdcd1
+1 < date: Wed, 13 Aug 2025 07:55:51 GMT
+1 < server: Google Frontend
+1 < Content-Length: 6588
+{"articles":[{"slug":"Creando-Articulo80-13186","title":"Creando Articulo80","description":"es una prueba80","body":"practicando Karate80","tagList":[],"createdAt":"2025-08-13T07:55:49.010Z","updatedAt":"2025-08-13T07:55:49.010Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Creando-Articulo14-13186","title":"Creando Articulo14","description":"es una prueba14","body":"practicando Karate14","tagList":[],"createdAt":"2025-08-13T07:43:46.793Z","updatedAt":"2025-08-13T07:43:46.793Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Creando-Articulo13-13186","title":"Creando Articulo13","description":"es una prueba11","body":"practicando Karate11","tagList":[],"createdAt":"2025-08-13T02:43:35.040Z","updatedAt":"2025-08-13T02:43:35.040Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Creando-Articulo12-13186","title":"Creando Articulo12","description":"es una prueba12","body":"practicando Karate12","tagList":[],"createdAt":"2025-08-13T02:02:35.692Z","updatedAt":"2025-08-13T02:02:35.692Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Probando-Articulo9-13186","title":"Probando Articulo9","description":"es una prueba9","body":"practicando Karate9","tagList":[],"createdAt":"2025-06-25T21:57:45.735Z","updatedAt":"2025-06-25T21:57:45.735Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Probando-Articulo8-13186","title":"Probando Articulo8","description":"es una prueba8","body":"practicando Karate8","tagList":[],"createdAt":"2025-05-26T01:08:04.570Z","updatedAt":"2025-05-26T01:08:04.570Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Probando-Articulo7-13186","title":"Probando Articulo7","description":"es una prueba7","body":"practicando Karate6","tagList":[],"createdAt":"2025-05-26T00:30:47.752Z","updatedAt":"2025-05-26T00:30:47.752Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Probando-Articulo6-13186","title":"Probando Articulo6","description":"es una prueba6","body":"practicando Karate6","tagList":[],"createdAt":"2025-05-26T00:27:03.581Z","updatedAt":"2025-05-26T00:27:03.581Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Discover-Bondar-Academy:-Your-Gateway-to-Efficient-Learning-1","title":"Discover Bondar Academy: Your Gateway to Efficient Learning","description":"Discover Bondar Academy's unique place in the educational landscape, where value-focused and efficient learning approaches converge. Our goal is to rapidly enhance your professional technical skills, boosting your market competitiveness and paving the way for higher-paying job opportunities. The speed of your progress is in your hands – you set the pace, and we provide the solutions and support to help you achieve your desired outcomes.","body":"Bondar Academy is a leading platform for efficient education, designed to boost your technical skills and advance your career in Quality Assurance (QA). Our program features a balanced mix of pre-recorded lectures and live sessions, allowing each student to study at their own pace and at a time that suits them. \n\nOur instructors are readily available on our Slack Workspace for support. Whether it's a quick question or a more complex issue requiring a Zoom call or Slack Huddle for screen sharing and live discussion, we're here to assist. Additionally, each class comes with a comprehensive question bank for self-assessment. Following each lecture, you have the opportunity to validate your understanding and readiness to progress to the next topic. You set the pace, and we provide the solutions to ensure you achieve your desired outcomes.\n\nSignUp today: https://www.bondaracademy.com","tagList":["qa career","Bondar Academy","QA Skills","Value-Focused"],"createdAt":"2024-01-27T21:52:32.682Z","updatedAt":"2024-01-27T21:52:32.682Z","favorited":false,"favoritesCount":732,"author":{"username":"Artem Bondar","bio":null,"image":"https://storage.googleapis.com/bondar-academy-visuals/Android.png","following":false}},{"slug":"The-value-of-pre-recorded-video-classes.-The-most-efficient-approach-to-tranfer-the-knowledge-1","title":"The value of pre-recorded video classes. The most efficient approach to tranfer the knowledge","description":"As educational practices evolve, video tutorials have emerged as the most efficient method for imparting theoretical knowledge. At Bondar Academy, we prioritize expertly structured and crafted video tutorials, ensuring you learn quickly and effectively and advance your skills.","body":"At Bondar Academy, we prioritize the value of your time and the efficiency of your education, distinguishing our approach from traditional colleges and live boot camps. Forget long, tedious live lectures on a fixed schedule. With us, you learn at your convenience and pace through optimized, structured video lectures. \n\nWe understand your goal is rapid knowledge acquisition. Our pre-recorded and well-organized lectures are designed precisely for this, ensuring no slowdowns from group dynamics or unrelated instructor anecdotes. \n\nDive straight into the subject matter, learn efficiently, and if questions arise, our immediate support on the Slack Workspace is there to streamline your learning process and swiftly remove any roadblocks.","tagList":["Bondar Academy","Video Lectures","Tutorials"],"createdAt":"2024-01-27T21:50:38.825Z","updatedAt":"2024-01-27T21:50:38.825Z","favorited":false,"favoritesCount":258,"author":{"username":"Artem Bondar","bio":null,"image":"https://storage.googleapis.com/bondar-academy-visuals/Android.png","following":false}}],"articlesCount":18}
+
+02:55:51.228 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:27
+And match response.articlesCount == 16
+match failed: EQUALS
+  $ | not equal (NUMBER:NUMBER)
+  18
+  16
+
+classpath:conduitApp/feature/HomePage.feature:27
+02:56:46.681 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
+02:56:46.901 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+02:56:47.454 [main] INFO  com.intuit.karate - karate.env system property was: null 
+02:56:47.457 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+02:56:47.667 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 65
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"pruebakarate@test.com","password":"karate123"}}
+
+02:56:48.599 [main] DEBUG com.intuit.karate - response time in milliseconds: 929
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"13e-uzj7JatuMwr+190hZZ6KW8brXeQ"
+1 < x-cloud-trace-context: 5c63eec923b5a1958439f97ff10dadf5
+1 < date: Wed, 13 Aug 2025 07:56:48 GMT
+1 < server: Google Frontend
+1 < Content-Length: 318
+{"user":{"email":"pruebakarate@test.com","username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA3MTgwOCwiZXhwIjoxNzYwMjU1ODA4fQ.UBlk2cTyhaGuoNXiZqynQW8AlZSXSjkfLdDb9oO5Q9Q"}}
+
+02:56:48.602 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+02:56:48.610 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/articles
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA3MTgwOCwiZXhwIjoxNzYwMjU1ODA4fQ.UBlk2cTyhaGuoNXiZqynQW8AlZSXSjkfLdDb9oO5Q9Q
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 117
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"article":{"title":"Creando Articulo81","description":"es una prueba81","body":"practicando Karate81","tagList":[]}}
+
+02:56:49.407 [main] DEBUG com.intuit.karate - response time in milliseconds: 797
+1 < 201
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"195-p4ISjfEo4O/ZxSr4WDSLajTsY+I"
+1 < x-cloud-trace-context: 2b3dba7c3e94c90d14c201ab3e5b662a
+1 < date: Wed, 13 Aug 2025 07:56:49 GMT
+1 < server: Google Frontend
+1 < Content-Length: 405
+{"article":{"slug":"Creando-Articulo81-13186","title":"Creando Articulo81","description":"es una prueba81","body":"practicando Karate81","tagList":[],"createdAt":"2025-08-13T07:56:49.242Z","updatedAt":"2025-08-13T07:56:49.242Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}}
+
+02:56:49.716 [main] INFO  com.intuit.karate - karate.env system property was: null 
+02:56:49.718 [main] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA3MTgwOCwiZXhwIjoxNzYwMjU1ODA4fQ.UBlk2cTyhaGuoNXiZqynQW8AlZSXSjkfLdDb9oO5Q9Q
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+02:56:50.456 [main] DEBUG com.intuit.karate - response time in milliseconds: 736
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"65-XAqp9RO5/GurIdusYmbGg8NPW48"
+1 < x-cloud-trace-context: 1a15687b15ccd5931b39db6c65e65e0f
+1 < date: Wed, 13 Aug 2025 07:56:50 GMT
+1 < server: Google Frontend
+1 < Content-Length: 101
+{"tags":["Test","Git","YouTube","Zoom","Blog","Bondar Academy","Enroll","Exam","Community","GitHub"]}
+
+02:56:50.471 [main] INFO  com.intuit.karate - karate.env system property was: null 
+02:56:50.483 [main] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/articles?limt=10&offset=0
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA3MTgwOCwiZXhwIjoxNzYwMjU1ODA4fQ.UBlk2cTyhaGuoNXiZqynQW8AlZSXSjkfLdDb9oO5Q9Q
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+02:56:51.367 [main] DEBUG com.intuit.karate - response time in milliseconds: 883
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"151e-L6Os01A/6PpenMHkN1JUIqLt70U"
+1 < x-cloud-trace-context: 1e407cbc0279763d5ca0c32aae2b069a
+1 < date: Wed, 13 Aug 2025 07:56:51 GMT
+1 < server: Google Frontend
+1 < Content-Length: 5406
+{"articles":[{"slug":"Creando-Articulo81-13186","title":"Creando Articulo81","description":"es una prueba81","body":"practicando Karate81","tagList":[],"createdAt":"2025-08-13T07:56:49.242Z","updatedAt":"2025-08-13T07:56:49.242Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Creando-Articulo80-13186","title":"Creando Articulo80","description":"es una prueba80","body":"practicando Karate80","tagList":[],"createdAt":"2025-08-13T07:55:49.010Z","updatedAt":"2025-08-13T07:55:49.010Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Creando-Articulo14-13186","title":"Creando Articulo14","description":"es una prueba14","body":"practicando Karate14","tagList":[],"createdAt":"2025-08-13T07:43:46.793Z","updatedAt":"2025-08-13T07:43:46.793Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Creando-Articulo13-13186","title":"Creando Articulo13","description":"es una prueba11","body":"practicando Karate11","tagList":[],"createdAt":"2025-08-13T02:43:35.040Z","updatedAt":"2025-08-13T02:43:35.040Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Creando-Articulo12-13186","title":"Creando Articulo12","description":"es una prueba12","body":"practicando Karate12","tagList":[],"createdAt":"2025-08-13T02:02:35.692Z","updatedAt":"2025-08-13T02:02:35.692Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Probando-Articulo9-13186","title":"Probando Articulo9","description":"es una prueba9","body":"practicando Karate9","tagList":[],"createdAt":"2025-06-25T21:57:45.735Z","updatedAt":"2025-06-25T21:57:45.735Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Probando-Articulo8-13186","title":"Probando Articulo8","description":"es una prueba8","body":"practicando Karate8","tagList":[],"createdAt":"2025-05-26T01:08:04.570Z","updatedAt":"2025-05-26T01:08:04.570Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Probando-Articulo7-13186","title":"Probando Articulo7","description":"es una prueba7","body":"practicando Karate6","tagList":[],"createdAt":"2025-05-26T00:30:47.752Z","updatedAt":"2025-05-26T00:30:47.752Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Probando-Articulo6-13186","title":"Probando Articulo6","description":"es una prueba6","body":"practicando Karate6","tagList":[],"createdAt":"2025-05-26T00:27:03.581Z","updatedAt":"2025-05-26T00:27:03.581Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Discover-Bondar-Academy:-Your-Gateway-to-Efficient-Learning-1","title":"Discover Bondar Academy: Your Gateway to Efficient Learning","description":"Discover Bondar Academy's unique place in the educational landscape, where value-focused and efficient learning approaches converge. Our goal is to rapidly enhance your professional technical skills, boosting your market competitiveness and paving the way for higher-paying job opportunities. The speed of your progress is in your hands – you set the pace, and we provide the solutions and support to help you achieve your desired outcomes.","body":"Bondar Academy is a leading platform for efficient education, designed to boost your technical skills and advance your career in Quality Assurance (QA). Our program features a balanced mix of pre-recorded lectures and live sessions, allowing each student to study at their own pace and at a time that suits them. \n\nOur instructors are readily available on our Slack Workspace for support. Whether it's a quick question or a more complex issue requiring a Zoom call or Slack Huddle for screen sharing and live discussion, we're here to assist. Additionally, each class comes with a comprehensive question bank for self-assessment. Following each lecture, you have the opportunity to validate your understanding and readiness to progress to the next topic. You set the pace, and we provide the solutions to ensure you achieve your desired outcomes.\n\nSignUp today: https://www.bondaracademy.com","tagList":["qa career","Bondar Academy","QA Skills","Value-Focused"],"createdAt":"2024-01-27T21:52:32.682Z","updatedAt":"2024-01-27T21:52:32.682Z","favorited":false,"favoritesCount":732,"author":{"username":"Artem Bondar","bio":null,"image":"https://storage.googleapis.com/bondar-academy-visuals/Android.png","following":false}}],"articlesCount":19}
+
+02:56:51.373 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:27
+And match response.articlesCount == 16
+match failed: EQUALS
+  $ | not equal (NUMBER:NUMBER)
+  19
+  16
+
+classpath:conduitApp/feature/HomePage.feature:27
+02:58:43.584 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
+02:58:43.802 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+02:58:44.342 [main] INFO  com.intuit.karate - karate.env system property was: null 
+02:58:44.345 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+02:58:44.543 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 65
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"pruebakarate@test.com","password":"karate123"}}
+
+02:58:45.399 [main] DEBUG com.intuit.karate - response time in milliseconds: 854
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"13e-ULCMnycv5LsKkPcHCjxAh5Ku2rk"
+1 < x-cloud-trace-context: d5fff3e20dc7c7a238f255825fd59eb8;o=1
+1 < date: Wed, 13 Aug 2025 07:58:45 GMT
+1 < server: Google Frontend
+1 < Content-Length: 318
+{"user":{"email":"pruebakarate@test.com","username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA3MTkyNSwiZXhwIjoxNzYwMjU1OTI1fQ.8WeC6Q6pOUABMAZU5P2qOCciIwHALoD6DDdrwghxdTs"}}
+
+02:58:45.402 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+02:58:45.410 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/articles
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA3MTkyNSwiZXhwIjoxNzYwMjU1OTI1fQ.8WeC6Q6pOUABMAZU5P2qOCciIwHALoD6DDdrwghxdTs
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 117
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"article":{"title":"Creando Articulo82","description":"es una prueba82","body":"practicando Karate82","tagList":[]}}
+
+02:58:46.184 [main] DEBUG com.intuit.karate - response time in milliseconds: 773
+1 < 201
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"195-RVV6akV+zWx8dHq5GyczVCk6T5I"
+1 < x-cloud-trace-context: 382645b00883afbe22f02d03cb12b61a
+1 < date: Wed, 13 Aug 2025 07:58:46 GMT
+1 < server: Google Frontend
+1 < Content-Length: 405
+{"article":{"slug":"Creando-Articulo82-13186","title":"Creando Articulo82","description":"es una prueba82","body":"practicando Karate82","tagList":[],"createdAt":"2025-08-13T07:58:46.019Z","updatedAt":"2025-08-13T07:58:46.019Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}}
+
+02:58:46.194 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/Articles.feature:13
+And match response.article.title == 'Creando Articulo81'
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'Creando Articulo82'
+  'Creando Articulo81'
+
+classpath:conduitApp/feature/Articles.feature:13
+02:59:00.127 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
+02:59:00.347 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+02:59:00.887 [main] INFO  com.intuit.karate - karate.env system property was: null 
+02:59:00.890 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+02:59:01.086 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 65
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"pruebakarate@test.com","password":"karate123"}}
+
+02:59:01.948 [main] DEBUG com.intuit.karate - response time in milliseconds: 860
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"13e-K1ABa4KWPt1H2f1GFgAX3Dppu7Q"
+1 < x-cloud-trace-context: 8bba8c142a6a23e3c9efe6c63b31a852;o=1
+1 < date: Wed, 13 Aug 2025 07:59:01 GMT
+1 < server: Google Frontend
+1 < Content-Length: 318
+{"user":{"email":"pruebakarate@test.com","username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA3MTk0MSwiZXhwIjoxNzYwMjU1OTQxfQ.ctMG5iSoERduyeZPG2xBKyOLZhG22o13Ncbphj2jJNA"}}
+
+02:59:01.953 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+02:59:01.959 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/articles
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA3MTk0MSwiZXhwIjoxNzYwMjU1OTQxfQ.ctMG5iSoERduyeZPG2xBKyOLZhG22o13Ncbphj2jJNA
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 117
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"article":{"title":"Creando Articulo83","description":"es una prueba83","body":"practicando Karate83","tagList":[]}}
+
+02:59:02.769 [main] DEBUG com.intuit.karate - response time in milliseconds: 808
+1 < 201
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"195-6D/Km0qngxakweJJLp4MJ8/H2A0"
+1 < x-cloud-trace-context: e96408b9cbaf2fb4c74ba7367f5e05fe
+1 < date: Wed, 13 Aug 2025 07:59:02 GMT
+1 < server: Google Frontend
+1 < Content-Length: 405
+{"article":{"slug":"Creando-Articulo83-13186","title":"Creando Articulo83","description":"es una prueba83","body":"practicando Karate83","tagList":[],"createdAt":"2025-08-13T07:59:02.601Z","updatedAt":"2025-08-13T07:59:02.601Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}}
+
+03:08:27.605 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
+03:08:27.822 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+03:08:28.357 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:08:28.361 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+03:08:28.571 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 65
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"pruebakarate@test.com","password":"karate123"}}
+
+03:08:29.594 [main] DEBUG com.intuit.karate - response time in milliseconds: 1022
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"13e-UZlyeTF1W5GcF/zMI54E7Eumjvc"
+1 < x-cloud-trace-context: 090b6201769e3314c69fa6ed83df9bff;o=1
+1 < date: Wed, 13 Aug 2025 08:08:29 GMT
+1 < server: Google Frontend
+1 < Content-Length: 318
+{"user":{"email":"pruebakarate@test.com","username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA3MjUwOSwiZXhwIjoxNzYwMjU2NTA5fQ.af7I-qma6O_YpNQrODnpNUyhcGDKZ20Ay4BQ73fWDHY"}}
+
+03:08:29.598 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+03:08:29.689 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/articles
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA3MjUwOSwiZXhwIjoxNzYwMjU2NTA5fQ.af7I-qma6O_YpNQrODnpNUyhcGDKZ20Ay4BQ73fWDHY
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 104
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"article":{"title":"Rymolf","description":"Ar Noy","body":"Nothing burns like the cold.","tagList":[]}}
+
+03:08:30.484 [main] DEBUG com.intuit.karate - response time in milliseconds: 795
+1 < 201
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"17c-MYsBIoQF/YZmOOn1O6UMS4g9Q38"
+1 < x-cloud-trace-context: c2e95a9795d96e850b0cd6323d33a976
+1 < date: Wed, 13 Aug 2025 08:08:30 GMT
+1 < server: Google Frontend
+1 < Content-Length: 380
+{"article":{"slug":"Rymolf-13186","title":"Rymolf","description":"Ar Noy","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2025-08-13T08:08:30.309Z","updatedAt":"2025-08-13T08:08:30.309Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}}
+
+03:08:49.760 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
+03:08:49.973 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+03:08:50.514 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:08:50.516 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+03:08:50.720 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 65
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"pruebakarate@test.com","password":"karate123"}}
+
+03:08:51.570 [main] DEBUG com.intuit.karate - response time in milliseconds: 848
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"13e-Dr13Hd0oVWJSk7gz9XSQzB4yvrs"
+1 < x-cloud-trace-context: 20ab09aef2b1e3c040a5d1d071d6f1d5;o=1
+1 < date: Wed, 13 Aug 2025 08:08:51 GMT
+1 < server: Google Frontend
+1 < Content-Length: 318
+{"user":{"email":"pruebakarate@test.com","username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA3MjUzMSwiZXhwIjoxNzYwMjU2NTMxfQ.BlFmvkmZ0PSHSKEY-oRtivsAJqiZtRAQylBbctG14cI"}}
+
+03:08:51.574 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+03:08:51.661 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/articles
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA3MjUzMSwiZXhwIjoxNzYwMjU2NTMxfQ.BlFmvkmZ0PSHSKEY-oRtivsAJqiZtRAQylBbctG14cI
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 131
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"article":{"title":"Jommo","description":"Ar Noy","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[]}}
+
+03:08:52.448 [main] DEBUG com.intuit.karate - response time in milliseconds: 786
+1 < 201
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"196-t2rRUcTTh4QrcNKgHfoUzVJOp9E"
+1 < x-cloud-trace-context: 37ad4080616e3edfba6e625c25efee9c
+1 < date: Wed, 13 Aug 2025 08:08:52 GMT
+1 < server: Google Frontend
+1 < Content-Length: 406
+{"article":{"slug":"Jommo-13186","title":"Jommo","description":"Ar Noy","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2025-08-13T08:08:52.277Z","updatedAt":"2025-08-13T08:08:52.277Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}}
+
+03:08:52.461 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:08:52.484 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/articles
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA3MjUzMSwiZXhwIjoxNzYwMjU2NTMxfQ.BlFmvkmZ0PSHSKEY-oRtivsAJqiZtRAQylBbctG14cI
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 193
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"article":{"title":"Theo Wull","description":"Tyrosh","body":"Never forget who you are. The rest of the world won't. Wear it like an armor and it can never be used against you.","tagList":[]}}
+
+03:08:53.278 [main] DEBUG com.intuit.karate - response time in milliseconds: 793
+1 < 201
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"1d8-UJr/KGqN9iGUoxSMXkgxp2PYyhg"
+1 < x-cloud-trace-context: d14d96ecfd9551abb0e01f2e7456f915
+1 < date: Wed, 13 Aug 2025 08:08:53 GMT
+1 < server: Google Frontend
+1 < Content-Length: 472
+{"article":{"slug":"Theo-Wull-13186","title":"Theo Wull","description":"Tyrosh","body":"Never forget who you are. The rest of the world won't. Wear it like an armor and it can never be used against you.","tagList":[],"createdAt":"2025-08-13T08:08:53.100Z","updatedAt":"2025-08-13T08:08:53.100Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}}
+
+03:08:53.284 [main] DEBUG com.intuit.karate - request:
+2 > GET https://conduit-api.bondaracademy.com/api/articles?limt=10&offset=0
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA3MjUzMSwiZXhwIjoxNzYwMjU2NTMxfQ.BlFmvkmZ0PSHSKEY-oRtivsAJqiZtRAQylBbctG14cI
+2 > Host: conduit-api.bondaracademy.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+
+
+03:08:54.134 [main] DEBUG com.intuit.karate - response time in milliseconds: 848
+2 < 200
+2 < x-powered-by: Express
+2 < vary: Origin
+2 < content-type: application/json; charset=utf-8
+2 < etag: W/"fb0-zYyguAaLRecPriXchEU1idHRgow"
+2 < x-cloud-trace-context: 57cc9e9d5233c18452157fb83c953394
+2 < date: Wed, 13 Aug 2025 08:08:54 GMT
+2 < server: Google Frontend
+2 < Content-Length: 4016
+{"articles":[{"slug":"Theo-Wull-13186","title":"Theo Wull","description":"Tyrosh","body":"Never forget who you are. The rest of the world won't. Wear it like an armor and it can never be used against you.","tagList":[],"createdAt":"2025-08-13T08:08:53.100Z","updatedAt":"2025-08-13T08:08:53.100Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jommo-13186","title":"Jommo","description":"Ar Noy","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2025-08-13T08:08:52.277Z","updatedAt":"2025-08-13T08:08:52.277Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Rymolf-13186","title":"Rymolf","description":"Ar Noy","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2025-08-13T08:08:30.309Z","updatedAt":"2025-08-13T08:08:30.309Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Creando-Articulo83-13186","title":"Creando Articulo83","description":"es una prueba83","body":"practicando Karate83","tagList":[],"createdAt":"2025-08-13T07:59:02.601Z","updatedAt":"2025-08-13T07:59:02.601Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Creando-Articulo82-13186","title":"Creando Articulo82","description":"es una prueba82","body":"practicando Karate82","tagList":[],"createdAt":"2025-08-13T07:58:46.019Z","updatedAt":"2025-08-13T07:58:46.019Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Creando-Articulo81-13186","title":"Creando Articulo81","description":"es una prueba81","body":"practicando Karate81","tagList":[],"createdAt":"2025-08-13T07:56:49.242Z","updatedAt":"2025-08-13T07:56:49.242Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Creando-Articulo80-13186","title":"Creando Articulo80","description":"es una prueba80","body":"practicando Karate80","tagList":[],"createdAt":"2025-08-13T07:55:49.010Z","updatedAt":"2025-08-13T07:55:49.010Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Creando-Articulo14-13186","title":"Creando Articulo14","description":"es una prueba14","body":"practicando Karate14","tagList":[],"createdAt":"2025-08-13T07:43:46.793Z","updatedAt":"2025-08-13T07:43:46.793Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Creando-Articulo13-13186","title":"Creando Articulo13","description":"es una prueba11","body":"practicando Karate11","tagList":[],"createdAt":"2025-08-13T02:43:35.040Z","updatedAt":"2025-08-13T02:43:35.040Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Creando-Articulo12-13186","title":"Creando Articulo12","description":"es una prueba12","body":"practicando Karate12","tagList":[],"createdAt":"2025-08-13T02:02:35.692Z","updatedAt":"2025-08-13T02:02:35.692Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":24}
+
+03:08:54.145 [main] DEBUG com.intuit.karate - request:
+3 > DELETE https://conduit-api.bondaracademy.com/api/articles/Theo-Wull-13186
+3 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA3MjUzMSwiZXhwIjoxNzYwMjU2NTMxfQ.BlFmvkmZ0PSHSKEY-oRtivsAJqiZtRAQylBbctG14cI
+3 > Host: conduit-api.bondaracademy.com
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+3 > Accept-Encoding: gzip,deflate
+
+
+03:08:54.868 [main] DEBUG com.intuit.karate - response time in milliseconds: 723
+3 < 204
+3 < x-powered-by: Express
+3 < vary: Origin
+3 < etag: W/"a-bAsFyilMr4Ra1hIU5PyoyFRunpI"
+3 < x-cloud-trace-context: 4a5bdfa01e8bda8c0b62e9e5e746e4b9
+3 < date: Wed, 13 Aug 2025 08:08:54 GMT
+3 < content-type: text/html
+3 < server: Google Frontend
+
+
+03:08:54.871 [main] DEBUG com.intuit.karate - request:
+4 > GET https://conduit-api.bondaracademy.com/api/articles?limt=10&offset=0
+4 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA3MjUzMSwiZXhwIjoxNzYwMjU2NTMxfQ.BlFmvkmZ0PSHSKEY-oRtivsAJqiZtRAQylBbctG14cI
+4 > Host: conduit-api.bondaracademy.com
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+4 > Accept-Encoding: gzip,deflate
+
+
+03:08:55.832 [main] DEBUG com.intuit.karate - response time in milliseconds: 960
+4 < 200
+4 < x-powered-by: Express
+4 < vary: Origin
+4 < content-type: application/json; charset=utf-8
+4 < etag: W/"f6b-WslcbX4oZ4i1zETs+cZSl4p1bsg"
+4 < x-cloud-trace-context: 12cbe23a32206e0bfd0ce368b4db8eb3
+4 < date: Wed, 13 Aug 2025 08:08:55 GMT
+4 < server: Google Frontend
+4 < Content-Length: 3947
+{"articles":[{"slug":"Jommo-13186","title":"Jommo","description":"Ar Noy","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2025-08-13T08:08:52.277Z","updatedAt":"2025-08-13T08:08:52.277Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Rymolf-13186","title":"Rymolf","description":"Ar Noy","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2025-08-13T08:08:30.309Z","updatedAt":"2025-08-13T08:08:30.309Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Creando-Articulo83-13186","title":"Creando Articulo83","description":"es una prueba83","body":"practicando Karate83","tagList":[],"createdAt":"2025-08-13T07:59:02.601Z","updatedAt":"2025-08-13T07:59:02.601Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Creando-Articulo82-13186","title":"Creando Articulo82","description":"es una prueba82","body":"practicando Karate82","tagList":[],"createdAt":"2025-08-13T07:58:46.019Z","updatedAt":"2025-08-13T07:58:46.019Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Creando-Articulo81-13186","title":"Creando Articulo81","description":"es una prueba81","body":"practicando Karate81","tagList":[],"createdAt":"2025-08-13T07:56:49.242Z","updatedAt":"2025-08-13T07:56:49.242Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Creando-Articulo80-13186","title":"Creando Articulo80","description":"es una prueba80","body":"practicando Karate80","tagList":[],"createdAt":"2025-08-13T07:55:49.010Z","updatedAt":"2025-08-13T07:55:49.010Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Creando-Articulo14-13186","title":"Creando Articulo14","description":"es una prueba14","body":"practicando Karate14","tagList":[],"createdAt":"2025-08-13T07:43:46.793Z","updatedAt":"2025-08-13T07:43:46.793Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Creando-Articulo13-13186","title":"Creando Articulo13","description":"es una prueba11","body":"practicando Karate11","tagList":[],"createdAt":"2025-08-13T02:43:35.040Z","updatedAt":"2025-08-13T02:43:35.040Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Creando-Articulo12-13186","title":"Creando Articulo12","description":"es una prueba12","body":"practicando Karate12","tagList":[],"createdAt":"2025-08-13T02:02:35.692Z","updatedAt":"2025-08-13T02:02:35.692Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Probando-Articulo9-13186","title":"Probando Articulo9","description":"es una prueba9","body":"practicando Karate9","tagList":[],"createdAt":"2025-06-25T21:57:45.735Z","updatedAt":"2025-06-25T21:57:45.735Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":23}
+
