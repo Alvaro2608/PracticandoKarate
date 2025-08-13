@@ -5,7 +5,18 @@ Feature: Sign Up new user
 
   @debug
   Scenario: New user Sign Up
+    Given def userData = {"email": "pruebakarate30@test.com","username": "Alvariytomyg16"}
+
     Given path 'users'
-    And request {"user": {"email": "pruebakarate27@test.com","password": "22345alv","username": "Alvariytomyg13"}}}
+    And request
+    """
+         {
+            "user": {
+                "email": #(userData.email),
+                "password": "12345alv",
+                "username": #(userData.username)
+            }
+        }
+    """
     When method Post
     Then status 201
