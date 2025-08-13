@@ -2,29 +2,39 @@ Feature: Articles
 
   Background: Define URL
     Given url apiUrl
+    * def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json')
+    * def dataGenerator = Java.type('helpers.DataGenerator')
+    * set articleRequestBody.article.title = dataGenerator.getRandomArticleValues().title
+    * set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description
+    * set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body
 
   Scenario: Create a new article
-    Given header Authorization = 'Token ' + token
     Given path 'articles'
-    And request {"article": {"title": "Probando Articulo9","description": "es una prueba9","body": "practicando Karate9","tagList": []}}
+    And request articleRequestBody
     When method Post
     Then status 201
-    And match response.article.title == 'Probando Articulo9'
+    And  match response.article.title == articleRequestBody.article.title
 
-  @debug
+
   Scenario: Create and Delete article
     Given path 'articles'
-    And request {"article": {"title": "Probando Articulo10","description": "es una prueba10","body": "practicando Karate10","tagList": []}}
+    And request articleRequestBody
     When method Post
     Then status 201
-    * def idArticle = response.article.slug
+    * def articleId = response.article.slug
 
-#    Given  params { limt: 10, offset: 0}
-#    Given path 'articles'
-#    When method Get
-#    Then status 200
-#    And match response.articles[0].title == 'Probando Articulo9'
+    Given  params { limt: 10, offset: 0}
+    Given path 'articles'
+    When method Get
+    Then status 200
+   # And match response.articles[0].title == articleRequestBody.article.title
 
-    Given path 'articles',idArticle
+    Given path 'articles',articleId
     When method Delete
     Then status 204
+
+    Given  params { limt: 10, offset: 0}
+    Given path 'articles'
+    When method Get
+    Then status 200
+    And match response.articles[0].title != articleRequestBody.article.title
