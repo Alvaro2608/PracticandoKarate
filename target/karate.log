@@ -4076,3 +4076,883 @@ classpath:conduitApp/feature/Articles.feature:13
 4 < Content-Length: 3947
 {"articles":[{"slug":"Jommo-13186","title":"Jommo","description":"Ar Noy","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2025-08-13T08:08:52.277Z","updatedAt":"2025-08-13T08:08:52.277Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Rymolf-13186","title":"Rymolf","description":"Ar Noy","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2025-08-13T08:08:30.309Z","updatedAt":"2025-08-13T08:08:30.309Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Creando-Articulo83-13186","title":"Creando Articulo83","description":"es una prueba83","body":"practicando Karate83","tagList":[],"createdAt":"2025-08-13T07:59:02.601Z","updatedAt":"2025-08-13T07:59:02.601Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Creando-Articulo82-13186","title":"Creando Articulo82","description":"es una prueba82","body":"practicando Karate82","tagList":[],"createdAt":"2025-08-13T07:58:46.019Z","updatedAt":"2025-08-13T07:58:46.019Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Creando-Articulo81-13186","title":"Creando Articulo81","description":"es una prueba81","body":"practicando Karate81","tagList":[],"createdAt":"2025-08-13T07:56:49.242Z","updatedAt":"2025-08-13T07:56:49.242Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Creando-Articulo80-13186","title":"Creando Articulo80","description":"es una prueba80","body":"practicando Karate80","tagList":[],"createdAt":"2025-08-13T07:55:49.010Z","updatedAt":"2025-08-13T07:55:49.010Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Creando-Articulo14-13186","title":"Creando Articulo14","description":"es una prueba14","body":"practicando Karate14","tagList":[],"createdAt":"2025-08-13T07:43:46.793Z","updatedAt":"2025-08-13T07:43:46.793Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Creando-Articulo13-13186","title":"Creando Articulo13","description":"es una prueba11","body":"practicando Karate11","tagList":[],"createdAt":"2025-08-13T02:43:35.040Z","updatedAt":"2025-08-13T02:43:35.040Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Creando-Articulo12-13186","title":"Creando Articulo12","description":"es una prueba12","body":"practicando Karate12","tagList":[],"createdAt":"2025-08-13T02:02:35.692Z","updatedAt":"2025-08-13T02:02:35.692Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Probando-Articulo9-13186","title":"Probando Articulo9","description":"es una prueba9","body":"practicando Karate9","tagList":[],"createdAt":"2025-06-25T21:57:45.735Z","updatedAt":"2025-06-25T21:57:45.735Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":23}
 
+09:55:56.593 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
+09:55:56.656 [main] INFO  com.intuit.karate.Runner - using system property 'karate.env': qa
+09:55:56.818 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:57:26.999 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:57:27.534 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:57:27.537 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+09:57:27.797 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 65
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"pruebakarate@test.com","password":"karate123"}}
+
+09:57:28.948 [main] DEBUG com.intuit.karate - response time in milliseconds: 1148
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"13e-8IKyxRFnrUy9yWPnMEw8/ReSGrc"
+1 < x-cloud-trace-context: e6f00b23bc8372c7a176d31fc5ce1b11;o=1
+1 < date: Wed, 13 Aug 2025 14:57:26 GMT
+1 < server: Google Frontend
+1 < Content-Length: 318
+{"user":{"email":"pruebakarate@test.com","username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA5NzA0NiwiZXhwIjoxNzYwMjgxMDQ2fQ.2BV90GCDyLmFurDZX4U6XLXvwHh5JDB_FgtyfFMwNvc"}}
+
+09:57:28.953 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+09:57:29.057 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/articles
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA5NzA0NiwiZXhwIjoxNzYwMjgxMDQ2fQ.2BV90GCDyLmFurDZX4U6XLXvwHh5JDB_FgtyfFMwNvc
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 206
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"article":{"title":"Theo Frey","description":"Ar Noy","body":"Power is a curious thing. Who lives, Who dies. Power resides where men believe it resides. It is a trick, A shadow on the wall.","tagList":[]}}
+
+09:57:29.860 [main] DEBUG com.intuit.karate - response time in milliseconds: 801
+1 < 201
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"1e5-yxqIjnVgshKJpQgpsAAs7LDeRnA"
+1 < x-cloud-trace-context: 0dcdccdc6a47424382a5f44aff5d1dc1
+1 < date: Wed, 13 Aug 2025 14:57:27 GMT
+1 < server: Google Frontend
+1 < Content-Length: 485
+{"article":{"slug":"Theo-Frey-13186","title":"Theo Frey","description":"Ar Noy","body":"Power is a curious thing. Who lives, Who dies. Power resides where men believe it resides. It is a trick, A shadow on the wall.","tagList":[],"createdAt":"2025-08-13T14:57:27.335Z","updatedAt":"2025-08-13T14:57:27.335Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}}
+
+09:57:29.878 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:57:29.901 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/articles
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA5NzA0NiwiZXhwIjoxNzYwMjgxMDQ2fQ.2BV90GCDyLmFurDZX4U6XLXvwHh5JDB_FgtyfFMwNvc
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 174
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"article":{"title":"Steffon Hollard","description":"Old Ghis","body":"When the snows fall and the white winds blow, the lone wolf dies but the pack survives.","tagList":[]}}
+
+09:57:30.717 [main] DEBUG com.intuit.karate - response time in milliseconds: 816
+1 < 201
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"1cb-BgzICTPAbAnrlytfCNYGeDxE2Tw"
+1 < x-cloud-trace-context: 19d801c6ab68903fa78e7df0d9184701
+1 < date: Wed, 13 Aug 2025 14:57:28 GMT
+1 < server: Google Frontend
+1 < Content-Length: 459
+{"article":{"slug":"Steffon-Hollard-13186","title":"Steffon Hollard","description":"Old Ghis","body":"When the snows fall and the white winds blow, the lone wolf dies but the pack survives.","tagList":[],"createdAt":"2025-08-13T14:57:28.200Z","updatedAt":"2025-08-13T14:57:28.200Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}}
+
+09:57:30.722 [main] DEBUG com.intuit.karate - request:
+2 > GET https://conduit-api.bondaracademy.com/api/articles?limt=10&offset=0
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA5NzA0NiwiZXhwIjoxNzYwMjgxMDQ2fQ.2BV90GCDyLmFurDZX4U6XLXvwHh5JDB_FgtyfFMwNvc
+2 > Host: conduit-api.bondaracademy.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+
+
+09:57:31.600 [main] DEBUG com.intuit.karate - response time in milliseconds: 878
+2 < 200
+2 < x-powered-by: Express
+2 < vary: Origin
+2 < content-type: application/json; charset=utf-8
+2 < etag: W/"105f-6UEE6Ls6i1Yp3pnrv3hlNDGOwXI"
+2 < x-cloud-trace-context: babc4629cc492680b650763e2abfcfe7
+2 < date: Wed, 13 Aug 2025 14:57:29 GMT
+2 < server: Google Frontend
+2 < Content-Length: 4191
+{"articles":[{"slug":"Steffon-Hollard-13186","title":"Steffon Hollard","description":"Old Ghis","body":"When the snows fall and the white winds blow, the lone wolf dies but the pack survives.","tagList":[],"createdAt":"2025-08-13T14:57:28.200Z","updatedAt":"2025-08-13T14:57:28.200Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Theo-Frey-13186","title":"Theo Frey","description":"Ar Noy","body":"Power is a curious thing. Who lives, Who dies. Power resides where men believe it resides. It is a trick, A shadow on the wall.","tagList":[],"createdAt":"2025-08-13T14:57:27.335Z","updatedAt":"2025-08-13T14:57:27.335Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Hugo-Wull-13186","title":"Hugo Wull","description":"Mantarys","body":"Why is it that when one man builds a wall, the next man immediately needs to know what's on the other side?","tagList":[],"createdAt":"2025-08-13T08:31:38.858Z","updatedAt":"2025-08-13T08:31:38.858Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Bryan-of-Oldtown-13186","title":"Bryan of Oldtown","description":"Myr","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2025-08-13T08:31:37.446Z","updatedAt":"2025-08-13T08:31:37.446Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Grazhar-zo-Galare-13186","title":"Grazhar zo Galare","description":"Qarth","body":"Fear cuts deeper than swords.","tagList":[],"createdAt":"2025-08-13T08:12:57.407Z","updatedAt":"2025-08-13T08:12:57.407Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Falyse-Stokeworth-13186","title":"Falyse Stokeworth","description":"Astapor","body":"When you play a game of thrones you win or you die.","tagList":[],"createdAt":"2025-08-13T08:12:57.243Z","updatedAt":"2025-08-13T08:12:57.243Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Myria-Jordayne-13186","title":"Myria Jordayne","description":"Samyrian","body":"The North remembers.","tagList":[],"createdAt":"2025-08-13T08:12:56.931Z","updatedAt":"2025-08-13T08:12:56.931Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jommo-13186","title":"Jommo","description":"Ar Noy","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2025-08-13T08:08:52.277Z","updatedAt":"2025-08-13T08:08:52.277Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Rymolf-13186","title":"Rymolf","description":"Ar Noy","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2025-08-13T08:08:30.309Z","updatedAt":"2025-08-13T08:08:30.309Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Creando-Articulo83-13186","title":"Creando Articulo83","description":"es una prueba83","body":"practicando Karate83","tagList":[],"createdAt":"2025-08-13T07:59:02.601Z","updatedAt":"2025-08-13T07:59:02.601Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":30}
+
+09:57:31.610 [main] DEBUG com.intuit.karate - request:
+3 > DELETE https://conduit-api.bondaracademy.com/api/articles/Steffon-Hollard-13186
+3 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA5NzA0NiwiZXhwIjoxNzYwMjgxMDQ2fQ.2BV90GCDyLmFurDZX4U6XLXvwHh5JDB_FgtyfFMwNvc
+3 > Host: conduit-api.bondaracademy.com
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+3 > Accept-Encoding: gzip,deflate
+
+
+09:57:32.344 [main] DEBUG com.intuit.karate - response time in milliseconds: 733
+3 < 204
+3 < x-powered-by: Express
+3 < vary: Origin
+3 < etag: W/"a-bAsFyilMr4Ra1hIU5PyoyFRunpI"
+3 < x-cloud-trace-context: c361c95ee4e2448a66e68a03097bc4ad
+3 < date: Wed, 13 Aug 2025 14:57:29 GMT
+3 < content-type: text/html
+3 < server: Google Frontend
+
+
+09:57:32.347 [main] DEBUG com.intuit.karate - request:
+4 > GET https://conduit-api.bondaracademy.com/api/articles?limt=10&offset=0
+4 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA5NzA0NiwiZXhwIjoxNzYwMjgxMDQ2fQ.2BV90GCDyLmFurDZX4U6XLXvwHh5JDB_FgtyfFMwNvc
+4 > Host: conduit-api.bondaracademy.com
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+4 > Accept-Encoding: gzip,deflate
+
+
+09:57:33.217 [main] DEBUG com.intuit.karate - response time in milliseconds: 869
+4 < 200
+4 < x-powered-by: Express
+4 < vary: Origin
+4 < content-type: application/json; charset=utf-8
+4 < etag: W/"1029-eKOyELRcF5f+uK+ruFOzEtd8q94"
+4 < x-cloud-trace-context: d8f0578e7b4da087ac5d07292fe39e94
+4 < date: Wed, 13 Aug 2025 14:57:30 GMT
+4 < server: Google Frontend
+4 < Content-Length: 4137
+{"articles":[{"slug":"Theo-Frey-13186","title":"Theo Frey","description":"Ar Noy","body":"Power is a curious thing. Who lives, Who dies. Power resides where men believe it resides. It is a trick, A shadow on the wall.","tagList":[],"createdAt":"2025-08-13T14:57:27.335Z","updatedAt":"2025-08-13T14:57:27.335Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Hugo-Wull-13186","title":"Hugo Wull","description":"Mantarys","body":"Why is it that when one man builds a wall, the next man immediately needs to know what's on the other side?","tagList":[],"createdAt":"2025-08-13T08:31:38.858Z","updatedAt":"2025-08-13T08:31:38.858Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Bryan-of-Oldtown-13186","title":"Bryan of Oldtown","description":"Myr","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2025-08-13T08:31:37.446Z","updatedAt":"2025-08-13T08:31:37.446Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Grazhar-zo-Galare-13186","title":"Grazhar zo Galare","description":"Qarth","body":"Fear cuts deeper than swords.","tagList":[],"createdAt":"2025-08-13T08:12:57.407Z","updatedAt":"2025-08-13T08:12:57.407Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Falyse-Stokeworth-13186","title":"Falyse Stokeworth","description":"Astapor","body":"When you play a game of thrones you win or you die.","tagList":[],"createdAt":"2025-08-13T08:12:57.243Z","updatedAt":"2025-08-13T08:12:57.243Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Myria-Jordayne-13186","title":"Myria Jordayne","description":"Samyrian","body":"The North remembers.","tagList":[],"createdAt":"2025-08-13T08:12:56.931Z","updatedAt":"2025-08-13T08:12:56.931Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jommo-13186","title":"Jommo","description":"Ar Noy","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2025-08-13T08:08:52.277Z","updatedAt":"2025-08-13T08:08:52.277Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Rymolf-13186","title":"Rymolf","description":"Ar Noy","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2025-08-13T08:08:30.309Z","updatedAt":"2025-08-13T08:08:30.309Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Creando-Articulo83-13186","title":"Creando Articulo83","description":"es una prueba83","body":"practicando Karate83","tagList":[],"createdAt":"2025-08-13T07:59:02.601Z","updatedAt":"2025-08-13T07:59:02.601Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Creando-Articulo82-13186","title":"Creando Articulo82","description":"es una prueba82","body":"practicando Karate82","tagList":[],"createdAt":"2025-08-13T07:58:46.019Z","updatedAt":"2025-08-13T07:58:46.019Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":29}
+
+09:57:33.581 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:57:33.584 [main] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA5NzA0NiwiZXhwIjoxNzYwMjgxMDQ2fQ.2BV90GCDyLmFurDZX4U6XLXvwHh5JDB_FgtyfFMwNvc
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+09:57:34.362 [main] DEBUG com.intuit.karate - response time in milliseconds: 776
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"65-XAqp9RO5/GurIdusYmbGg8NPW48"
+1 < x-cloud-trace-context: d1ef535da52a275955073829f1f9f1e2
+1 < date: Wed, 13 Aug 2025 14:57:31 GMT
+1 < server: Google Frontend
+1 < Content-Length: 101
+{"tags":["Test","Git","YouTube","Zoom","Blog","Bondar Academy","Enroll","Exam","Community","GitHub"]}
+
+09:57:34.375 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:57:34.389 [main] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/articles?limt=10&offset=0
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA5NzA0NiwiZXhwIjoxNzYwMjgxMDQ2fQ.2BV90GCDyLmFurDZX4U6XLXvwHh5JDB_FgtyfFMwNvc
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+09:57:35.069 [main] DEBUG com.intuit.karate - response time in milliseconds: 679
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"1029-eKOyELRcF5f+uK+ruFOzEtd8q94"
+1 < x-cloud-trace-context: 65f320d37e78d2c9a62e1fdc8689cfff
+1 < date: Wed, 13 Aug 2025 14:57:32 GMT
+1 < server: Google Frontend
+1 < Content-Length: 4137
+{"articles":[{"slug":"Theo-Frey-13186","title":"Theo Frey","description":"Ar Noy","body":"Power is a curious thing. Who lives, Who dies. Power resides where men believe it resides. It is a trick, A shadow on the wall.","tagList":[],"createdAt":"2025-08-13T14:57:27.335Z","updatedAt":"2025-08-13T14:57:27.335Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Hugo-Wull-13186","title":"Hugo Wull","description":"Mantarys","body":"Why is it that when one man builds a wall, the next man immediately needs to know what's on the other side?","tagList":[],"createdAt":"2025-08-13T08:31:38.858Z","updatedAt":"2025-08-13T08:31:38.858Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Bryan-of-Oldtown-13186","title":"Bryan of Oldtown","description":"Myr","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2025-08-13T08:31:37.446Z","updatedAt":"2025-08-13T08:31:37.446Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Grazhar-zo-Galare-13186","title":"Grazhar zo Galare","description":"Qarth","body":"Fear cuts deeper than swords.","tagList":[],"createdAt":"2025-08-13T08:12:57.407Z","updatedAt":"2025-08-13T08:12:57.407Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Falyse-Stokeworth-13186","title":"Falyse Stokeworth","description":"Astapor","body":"When you play a game of thrones you win or you die.","tagList":[],"createdAt":"2025-08-13T08:12:57.243Z","updatedAt":"2025-08-13T08:12:57.243Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Myria-Jordayne-13186","title":"Myria Jordayne","description":"Samyrian","body":"The North remembers.","tagList":[],"createdAt":"2025-08-13T08:12:56.931Z","updatedAt":"2025-08-13T08:12:56.931Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jommo-13186","title":"Jommo","description":"Ar Noy","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2025-08-13T08:08:52.277Z","updatedAt":"2025-08-13T08:08:52.277Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Rymolf-13186","title":"Rymolf","description":"Ar Noy","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2025-08-13T08:08:30.309Z","updatedAt":"2025-08-13T08:08:30.309Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Creando-Articulo83-13186","title":"Creando Articulo83","description":"es una prueba83","body":"practicando Karate83","tagList":[],"createdAt":"2025-08-13T07:59:02.601Z","updatedAt":"2025-08-13T07:59:02.601Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Creando-Articulo82-13186","title":"Creando Articulo82","description":"es una prueba82","body":"practicando Karate82","tagList":[],"createdAt":"2025-08-13T07:58:46.019Z","updatedAt":"2025-08-13T07:58:46.019Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":29}
+
+09:57:35.073 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:28
+And match response == {"articles": "#array", "articlesCount": 16}
+match failed: EQUALS
+  $ | not equal | match failed for name: 'articlesCount' (MAP:MAP)
+  {"articles":[{"slug":"Theo-Frey-13186","title":"Theo Frey","description":"Ar Noy","body":"Power is a curious thing. Who lives, Who dies. Power resides where men believe it resides. It is a trick, A shadow on the wall.","tagList":[],"createdAt":"2025-08-13T14:57:27.335Z","updatedAt":"2025-08-13T14:57:27.335Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Hugo-Wull-13186","title":"Hugo Wull","description":"Mantarys","body":"Why is it that when one man builds a wall, the next man immediately needs to know what's on the other side?","tagList":[],"createdAt":"2025-08-13T08:31:38.858Z","updatedAt":"2025-08-13T08:31:38.858Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Bryan-of-Oldtown-13186","title":"Bryan of Oldtown","description":"Myr","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2025-08-13T08:31:37.446Z","updatedAt":"2025-08-13T08:31:37.446Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Grazhar-zo-Galare-13186","title":"Grazhar zo Galare","description":"Qarth","body":"Fear cuts deeper than swords.","tagList":[],"createdAt":"2025-08-13T08:12:57.407Z","updatedAt":"2025-08-13T08:12:57.407Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Falyse-Stokeworth-13186","title":"Falyse Stokeworth","description":"Astapor","body":"When you play a game of thrones you win or you die.","tagList":[],"createdAt":"2025-08-13T08:12:57.243Z","updatedAt":"2025-08-13T08:12:57.243Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Myria-Jordayne-13186","title":"Myria Jordayne","description":"Samyrian","body":"The North remembers.","tagList":[],"createdAt":"2025-08-13T08:12:56.931Z","updatedAt":"2025-08-13T08:12:56.931Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jommo-13186","title":"Jommo","description":"Ar Noy","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2025-08-13T08:08:52.277Z","updatedAt":"2025-08-13T08:08:52.277Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Rymolf-13186","title":"Rymolf","description":"Ar Noy","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2025-08-13T08:08:30.309Z","updatedAt":"2025-08-13T08:08:30.309Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Creando-Articulo83-13186","title":"Creando Articulo83","description":"es una prueba83","body":"practicando Karate83","tagList":[],"createdAt":"2025-08-13T07:59:02.601Z","updatedAt":"2025-08-13T07:59:02.601Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Creando-Articulo82-13186","title":"Creando Articulo82","description":"es una prueba82","body":"practicando Karate82","tagList":[],"createdAt":"2025-08-13T07:58:46.019Z","updatedAt":"2025-08-13T07:58:46.019Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":29}
+  {"articles":"#array","articlesCount":16}
+
+    $.articlesCount | not equal (NUMBER:NUMBER)
+    29
+    16
+
+classpath:conduitApp/feature/HomePage.feature:28
+09:57:35.156 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:57:35.197 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA5NzA0NiwiZXhwIjoxNzYwMjgxMDQ2fQ.2BV90GCDyLmFurDZX4U6XLXvwHh5JDB_FgtyfFMwNvc
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 86
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"emile12@test.com","password":"12345alv","username":"malvina.jerde"}}
+
+09:57:36.008 [main] DEBUG com.intuit.karate - response time in milliseconds: 809
+1 < 201
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"145-LIoMbKEDgbxtk/iPCInz5nc+kSI"
+1 < x-cloud-trace-context: 3cbbcba832b8ec269c1410ea22429c70
+1 < date: Wed, 13 Aug 2025 14:57:33 GMT
+1 < server: Google Frontend
+1 < Content-Length: 325
+{"user":{"id":31886,"email":"emile12@test.com","username":"malvina.jerde","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozMTg4Nn0sImlhdCI6MTc1NTA5NzA1MywiZXhwIjoxNzYwMjgxMDUzfQ.cB2A6xw4s7rxMY4q5vl6Fwafo_TO6Ca0wFaqXxTlDRY"}}
+
+09:58:45.236 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:58:45.757 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:58:45.762 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+09:58:45.955 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 65
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"pruebakarate@test.com","password":"karate123"}}
+
+09:58:46.815 [main] DEBUG com.intuit.karate - response time in milliseconds: 858
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"13e-0NcH20YUu0PI+glPBQajwoco+HQ"
+1 < x-cloud-trace-context: 443f154f10d73aad30f8af86bd2533e2;o=1
+1 < date: Wed, 13 Aug 2025 14:58:44 GMT
+1 < server: Google Frontend
+1 < Content-Length: 318
+{"user":{"email":"pruebakarate@test.com","username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA5NzEyNCwiZXhwIjoxNzYwMjgxMTI0fQ.O0o_r0fQywS6ZWKvA3-bR9-xdDG2s9KlJivX9jGV5sY"}}
+
+09:58:46.819 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+09:58:46.914 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/articles
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA5NzEyNCwiZXhwIjoxNzYwMjgxMTI0fQ.O0o_r0fQywS6ZWKvA3-bR9-xdDG2s9KlJivX9jGV5sY
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 160
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"article":{"title":"Liane Vance","description":"Asshai","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[]}}
+
+09:58:47.745 [main] DEBUG com.intuit.karate - response time in milliseconds: 829
+1 < 201
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"1b9-fVmIrGIRmOdDi5ZYSXY9ZT9Esk8"
+1 < x-cloud-trace-context: 19822e91796d5b826004cfd0facb7762
+1 < date: Wed, 13 Aug 2025 14:58:45 GMT
+1 < server: Google Frontend
+1 < Content-Length: 441
+{"article":{"slug":"Liane-Vance-13186","title":"Liane Vance","description":"Asshai","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2025-08-13T14:58:45.208Z","updatedAt":"2025-08-13T14:58:45.208Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}}
+
+09:58:47.761 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:58:47.785 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/articles
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA5NzEyNCwiZXhwIjoxNzYwMjgxMTI0fQ.O0o_r0fQywS6ZWKvA3-bR9-xdDG2s9KlJivX9jGV5sY
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 168
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"article":{"title":"Veiled Lady","description":"Asshai","body":"When the snows fall and the white winds blow, the lone wolf dies but the pack survives.","tagList":[]}}
+
+09:58:48.563 [main] DEBUG com.intuit.karate - response time in milliseconds: 777
+1 < 201
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"1c1-g4Z4U2ARnyda6tq76BngwCSGNd4"
+1 < x-cloud-trace-context: 87f9a29ab00296cf03e87c4961c9ce4e
+1 < date: Wed, 13 Aug 2025 14:58:46 GMT
+1 < server: Google Frontend
+1 < Content-Length: 449
+{"article":{"slug":"Veiled-Lady-13186","title":"Veiled Lady","description":"Asshai","body":"When the snows fall and the white winds blow, the lone wolf dies but the pack survives.","tagList":[],"createdAt":"2025-08-13T14:58:46.045Z","updatedAt":"2025-08-13T14:58:46.045Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}}
+
+09:58:48.567 [main] DEBUG com.intuit.karate - request:
+2 > GET https://conduit-api.bondaracademy.com/api/articles?limt=10&offset=0
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA5NzEyNCwiZXhwIjoxNzYwMjgxMTI0fQ.O0o_r0fQywS6ZWKvA3-bR9-xdDG2s9KlJivX9jGV5sY
+2 > Host: conduit-api.bondaracademy.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+
+
+09:58:49.415 [main] DEBUG com.intuit.karate - response time in milliseconds: 848
+2 < 200
+2 < x-powered-by: Express
+2 < vary: Origin
+2 < content-type: application/json; charset=utf-8
+2 < etag: W/"1079-AitDMkNBD0hHKW6khDbnKSxZmVQ"
+2 < x-cloud-trace-context: 21f997069abfd34518fb4d20c58f3757
+2 < date: Wed, 13 Aug 2025 14:58:47 GMT
+2 < server: Google Frontend
+2 < Content-Length: 4217
+{"articles":[{"slug":"Veiled-Lady-13186","title":"Veiled Lady","description":"Asshai","body":"When the snows fall and the white winds blow, the lone wolf dies but the pack survives.","tagList":[],"createdAt":"2025-08-13T14:58:46.045Z","updatedAt":"2025-08-13T14:58:46.045Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Liane-Vance-13186","title":"Liane Vance","description":"Asshai","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2025-08-13T14:58:45.208Z","updatedAt":"2025-08-13T14:58:45.208Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Theo-Frey-13186","title":"Theo Frey","description":"Ar Noy","body":"Power is a curious thing. Who lives, Who dies. Power resides where men believe it resides. It is a trick, A shadow on the wall.","tagList":[],"createdAt":"2025-08-13T14:57:27.335Z","updatedAt":"2025-08-13T14:57:27.335Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Hugo-Wull-13186","title":"Hugo Wull","description":"Mantarys","body":"Why is it that when one man builds a wall, the next man immediately needs to know what's on the other side?","tagList":[],"createdAt":"2025-08-13T08:31:38.858Z","updatedAt":"2025-08-13T08:31:38.858Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Bryan-of-Oldtown-13186","title":"Bryan of Oldtown","description":"Myr","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2025-08-13T08:31:37.446Z","updatedAt":"2025-08-13T08:31:37.446Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Grazhar-zo-Galare-13186","title":"Grazhar zo Galare","description":"Qarth","body":"Fear cuts deeper than swords.","tagList":[],"createdAt":"2025-08-13T08:12:57.407Z","updatedAt":"2025-08-13T08:12:57.407Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Falyse-Stokeworth-13186","title":"Falyse Stokeworth","description":"Astapor","body":"When you play a game of thrones you win or you die.","tagList":[],"createdAt":"2025-08-13T08:12:57.243Z","updatedAt":"2025-08-13T08:12:57.243Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Myria-Jordayne-13186","title":"Myria Jordayne","description":"Samyrian","body":"The North remembers.","tagList":[],"createdAt":"2025-08-13T08:12:56.931Z","updatedAt":"2025-08-13T08:12:56.931Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jommo-13186","title":"Jommo","description":"Ar Noy","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2025-08-13T08:08:52.277Z","updatedAt":"2025-08-13T08:08:52.277Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Rymolf-13186","title":"Rymolf","description":"Ar Noy","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2025-08-13T08:08:30.309Z","updatedAt":"2025-08-13T08:08:30.309Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":31}
+
+09:58:49.424 [main] DEBUG com.intuit.karate - request:
+3 > DELETE https://conduit-api.bondaracademy.com/api/articles/Veiled-Lady-13186
+3 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA5NzEyNCwiZXhwIjoxNzYwMjgxMTI0fQ.O0o_r0fQywS6ZWKvA3-bR9-xdDG2s9KlJivX9jGV5sY
+3 > Host: conduit-api.bondaracademy.com
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+3 > Accept-Encoding: gzip,deflate
+
+
+09:58:50.139 [main] DEBUG com.intuit.karate - response time in milliseconds: 715
+3 < 204
+3 < x-powered-by: Express
+3 < vary: Origin
+3 < etag: W/"a-bAsFyilMr4Ra1hIU5PyoyFRunpI"
+3 < x-cloud-trace-context: 51c66489afc198a9bbbd3551d5824f35
+3 < date: Wed, 13 Aug 2025 14:58:47 GMT
+3 < content-type: text/html
+3 < server: Google Frontend
+
+
+09:58:50.142 [main] DEBUG com.intuit.karate - request:
+4 > GET https://conduit-api.bondaracademy.com/api/articles?limt=10&offset=0
+4 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA5NzEyNCwiZXhwIjoxNzYwMjgxMTI0fQ.O0o_r0fQywS6ZWKvA3-bR9-xdDG2s9KlJivX9jGV5sY
+4 > Host: conduit-api.bondaracademy.com
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+4 > Accept-Encoding: gzip,deflate
+
+
+09:58:51.012 [main] DEBUG com.intuit.karate - response time in milliseconds: 869
+4 < 200
+4 < x-powered-by: Express
+4 < vary: Origin
+4 < content-type: application/json; charset=utf-8
+4 < etag: W/"104d-niRQ89Qfc47E2JMYHo7f7Ih70/E"
+4 < x-cloud-trace-context: df513bc9c8e4ffa26921ece903b170c3
+4 < date: Wed, 13 Aug 2025 14:58:48 GMT
+4 < server: Google Frontend
+4 < Content-Length: 4173
+{"articles":[{"slug":"Liane-Vance-13186","title":"Liane Vance","description":"Asshai","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2025-08-13T14:58:45.208Z","updatedAt":"2025-08-13T14:58:45.208Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Theo-Frey-13186","title":"Theo Frey","description":"Ar Noy","body":"Power is a curious thing. Who lives, Who dies. Power resides where men believe it resides. It is a trick, A shadow on the wall.","tagList":[],"createdAt":"2025-08-13T14:57:27.335Z","updatedAt":"2025-08-13T14:57:27.335Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Hugo-Wull-13186","title":"Hugo Wull","description":"Mantarys","body":"Why is it that when one man builds a wall, the next man immediately needs to know what's on the other side?","tagList":[],"createdAt":"2025-08-13T08:31:38.858Z","updatedAt":"2025-08-13T08:31:38.858Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Bryan-of-Oldtown-13186","title":"Bryan of Oldtown","description":"Myr","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2025-08-13T08:31:37.446Z","updatedAt":"2025-08-13T08:31:37.446Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Grazhar-zo-Galare-13186","title":"Grazhar zo Galare","description":"Qarth","body":"Fear cuts deeper than swords.","tagList":[],"createdAt":"2025-08-13T08:12:57.407Z","updatedAt":"2025-08-13T08:12:57.407Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Falyse-Stokeworth-13186","title":"Falyse Stokeworth","description":"Astapor","body":"When you play a game of thrones you win or you die.","tagList":[],"createdAt":"2025-08-13T08:12:57.243Z","updatedAt":"2025-08-13T08:12:57.243Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Myria-Jordayne-13186","title":"Myria Jordayne","description":"Samyrian","body":"The North remembers.","tagList":[],"createdAt":"2025-08-13T08:12:56.931Z","updatedAt":"2025-08-13T08:12:56.931Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jommo-13186","title":"Jommo","description":"Ar Noy","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2025-08-13T08:08:52.277Z","updatedAt":"2025-08-13T08:08:52.277Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Rymolf-13186","title":"Rymolf","description":"Ar Noy","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2025-08-13T08:08:30.309Z","updatedAt":"2025-08-13T08:08:30.309Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Creando-Articulo83-13186","title":"Creando Articulo83","description":"es una prueba83","body":"practicando Karate83","tagList":[],"createdAt":"2025-08-13T07:59:02.601Z","updatedAt":"2025-08-13T07:59:02.601Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":30}
+
+09:58:51.349 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:58:51.351 [main] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA5NzEyNCwiZXhwIjoxNzYwMjgxMTI0fQ.O0o_r0fQywS6ZWKvA3-bR9-xdDG2s9KlJivX9jGV5sY
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+09:58:52.130 [main] DEBUG com.intuit.karate - response time in milliseconds: 779
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"65-XAqp9RO5/GurIdusYmbGg8NPW48"
+1 < x-cloud-trace-context: 5efb70b9b3888209a67c3ea26eeaa13f
+1 < date: Wed, 13 Aug 2025 14:58:49 GMT
+1 < server: Google Frontend
+1 < Content-Length: 101
+{"tags":["Test","Git","YouTube","Zoom","Blog","Bondar Academy","Enroll","Exam","Community","GitHub"]}
+
+09:58:52.143 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:58:52.154 [main] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/articles?limt=10&offset=0
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA5NzEyNCwiZXhwIjoxNzYwMjgxMTI0fQ.O0o_r0fQywS6ZWKvA3-bR9-xdDG2s9KlJivX9jGV5sY
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+09:58:52.871 [main] DEBUG com.intuit.karate - response time in milliseconds: 715
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"104d-niRQ89Qfc47E2JMYHo7f7Ih70/E"
+1 < x-cloud-trace-context: d85278a928cdcd003c3f5851bd67b22f
+1 < date: Wed, 13 Aug 2025 14:58:50 GMT
+1 < server: Google Frontend
+1 < Content-Length: 4173
+{"articles":[{"slug":"Liane-Vance-13186","title":"Liane Vance","description":"Asshai","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2025-08-13T14:58:45.208Z","updatedAt":"2025-08-13T14:58:45.208Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Theo-Frey-13186","title":"Theo Frey","description":"Ar Noy","body":"Power is a curious thing. Who lives, Who dies. Power resides where men believe it resides. It is a trick, A shadow on the wall.","tagList":[],"createdAt":"2025-08-13T14:57:27.335Z","updatedAt":"2025-08-13T14:57:27.335Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Hugo-Wull-13186","title":"Hugo Wull","description":"Mantarys","body":"Why is it that when one man builds a wall, the next man immediately needs to know what's on the other side?","tagList":[],"createdAt":"2025-08-13T08:31:38.858Z","updatedAt":"2025-08-13T08:31:38.858Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Bryan-of-Oldtown-13186","title":"Bryan of Oldtown","description":"Myr","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2025-08-13T08:31:37.446Z","updatedAt":"2025-08-13T08:31:37.446Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Grazhar-zo-Galare-13186","title":"Grazhar zo Galare","description":"Qarth","body":"Fear cuts deeper than swords.","tagList":[],"createdAt":"2025-08-13T08:12:57.407Z","updatedAt":"2025-08-13T08:12:57.407Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Falyse-Stokeworth-13186","title":"Falyse Stokeworth","description":"Astapor","body":"When you play a game of thrones you win or you die.","tagList":[],"createdAt":"2025-08-13T08:12:57.243Z","updatedAt":"2025-08-13T08:12:57.243Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Myria-Jordayne-13186","title":"Myria Jordayne","description":"Samyrian","body":"The North remembers.","tagList":[],"createdAt":"2025-08-13T08:12:56.931Z","updatedAt":"2025-08-13T08:12:56.931Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jommo-13186","title":"Jommo","description":"Ar Noy","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2025-08-13T08:08:52.277Z","updatedAt":"2025-08-13T08:08:52.277Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Rymolf-13186","title":"Rymolf","description":"Ar Noy","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2025-08-13T08:08:30.309Z","updatedAt":"2025-08-13T08:08:30.309Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Creando-Articulo83-13186","title":"Creando Articulo83","description":"es una prueba83","body":"practicando Karate83","tagList":[],"createdAt":"2025-08-13T07:59:02.601Z","updatedAt":"2025-08-13T07:59:02.601Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":30}
+
+09:58:52.874 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/HomePage.feature:30
+And match response.articles[*].favoritesCount contains 67
+match failed: CONTAINS
+  $ | actual does not contain expected | actual array does not contain expected item - 67 (LIST:NUMBER)
+  [0,0,0,0,0,0,0,0,0,0]
+  67
+
+    $[9] | not equal (NUMBER:NUMBER)
+    0
+    67
+
+    $[8] | not equal (NUMBER:NUMBER)
+    0
+    67
+
+    $[7] | not equal (NUMBER:NUMBER)
+    0
+    67
+
+    $[6] | not equal (NUMBER:NUMBER)
+    0
+    67
+
+    $[5] | not equal (NUMBER:NUMBER)
+    0
+    67
+
+    $[4] | not equal (NUMBER:NUMBER)
+    0
+    67
+
+    $[3] | not equal (NUMBER:NUMBER)
+    0
+    67
+
+    $[2] | not equal (NUMBER:NUMBER)
+    0
+    67
+
+    $[1] | not equal (NUMBER:NUMBER)
+    0
+    67
+
+    $[0] | not equal (NUMBER:NUMBER)
+    0
+    67
+
+classpath:conduitApp/feature/HomePage.feature:30
+09:58:52.954 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:58:52.997 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA5NzEyNCwiZXhwIjoxNzYwMjgxMTI0fQ.O0o_r0fQywS6ZWKvA3-bR9-xdDG2s9KlJivX9jGV5sY
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 87
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"rodolfo37@test.com","password":"12345alv","username":"chae.oreilly"}}
+
+09:58:53.779 [main] DEBUG com.intuit.karate - response time in milliseconds: 782
+1 < 201
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"146-gIqAaUetIZm7b4y9NIXDSF7gp9A"
+1 < x-cloud-trace-context: 13bd09ec4c3d004bfd5924d33adc1e98
+1 < date: Wed, 13 Aug 2025 14:58:51 GMT
+1 < server: Google Frontend
+1 < Content-Length: 326
+{"user":{"id":31887,"email":"rodolfo37@test.com","username":"chae.oreilly","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozMTg4N30sImlhdCI6MTc1NTA5NzEzMSwiZXhwIjoxNzYwMjgxMTMxfQ.TSreJLnWiPKRXy3_pviLr9W_XvHYrF2oQZAKk2GPbXA"}}
+
+09:59:22.909 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:59:23.472 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:59:23.476 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+09:59:23.678 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 65
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"pruebakarate@test.com","password":"karate123"}}
+
+09:59:24.520 [main] DEBUG com.intuit.karate - response time in milliseconds: 839
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"13e-LSKA8RqwdmNRvtWvzoHOlmh5xDs"
+1 < x-cloud-trace-context: df03a39555e143a0b8ff70ee76b4667f;o=1
+1 < date: Wed, 13 Aug 2025 14:59:22 GMT
+1 < server: Google Frontend
+1 < Content-Length: 318
+{"user":{"email":"pruebakarate@test.com","username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA5NzE2MiwiZXhwIjoxNzYwMjgxMTYyfQ.-R1zec0p56nb91DoXye3Ydq1aeWLsbQCs9zQdZXPscQ"}}
+
+09:59:24.524 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+09:59:24.620 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/articles
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA5NzE2MiwiZXhwIjoxNzYwMjgxMTYyfQ.-R1zec0p56nb91DoXye3Ydq1aeWLsbQCs9zQdZXPscQ
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 165
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"article":{"title":"Renfred Rykker","description":"Asshai","body":"And I have a tender spot in my heart for cripples and bastards and broken things.","tagList":[]}}
+
+09:59:25.420 [main] DEBUG com.intuit.karate - response time in milliseconds: 800
+1 < 201
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"1c1-btP4/wm5cwzhU97yBNWDNvZexr4"
+1 < x-cloud-trace-context: 5a9602674368461a08d0d73ffefe8c76
+1 < date: Wed, 13 Aug 2025 14:59:23 GMT
+1 < server: Google Frontend
+1 < Content-Length: 449
+{"article":{"slug":"Renfred-Rykker-13186","title":"Renfred Rykker","description":"Asshai","body":"And I have a tender spot in my heart for cripples and bastards and broken things.","tagList":[],"createdAt":"2025-08-13T14:59:22.894Z","updatedAt":"2025-08-13T14:59:22.894Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}}
+
+09:59:25.435 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:59:25.467 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/articles
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA5NzE2MiwiZXhwIjoxNzYwMjgxMTYyfQ.-R1zec0p56nb91DoXye3Ydq1aeWLsbQCs9zQdZXPscQ
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 170
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"article":{"title":"Gormon Tyrell","description":"Ar Noy","body":"When the snows fall and the white winds blow, the lone wolf dies but the pack survives.","tagList":[]}}
+
+09:59:26.296 [main] DEBUG com.intuit.karate - response time in milliseconds: 828
+1 < 201
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"1c5-yRybiRzWrg3FDo9DLe9aIGwxOJY"
+1 < x-cloud-trace-context: ed0dbcd65b65d9c6c8f6a2f099b801df
+1 < date: Wed, 13 Aug 2025 14:59:23 GMT
+1 < server: Google Frontend
+1 < Content-Length: 453
+{"article":{"slug":"Gormon-Tyrell-13186","title":"Gormon Tyrell","description":"Ar Noy","body":"When the snows fall and the white winds blow, the lone wolf dies but the pack survives.","tagList":[],"createdAt":"2025-08-13T14:59:23.749Z","updatedAt":"2025-08-13T14:59:23.749Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}}
+
+09:59:26.300 [main] DEBUG com.intuit.karate - request:
+2 > GET https://conduit-api.bondaracademy.com/api/articles?limt=10&offset=0
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA5NzE2MiwiZXhwIjoxNzYwMjgxMTYyfQ.-R1zec0p56nb91DoXye3Ydq1aeWLsbQCs9zQdZXPscQ
+2 > Host: conduit-api.bondaracademy.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+
+
+09:59:27.156 [main] DEBUG com.intuit.karate - response time in milliseconds: 856
+2 < 200
+2 < x-powered-by: Express
+2 < vary: Origin
+2 < content-type: application/json; charset=utf-8
+2 < etag: W/"10c2-Ad79w3o+0DZmnoXOjInSRpDZwU8"
+2 < x-cloud-trace-context: 63b2bfb24d28539051c914c0d2113f1a
+2 < date: Wed, 13 Aug 2025 14:59:24 GMT
+2 < server: Google Frontend
+2 < Content-Length: 4290
+{"articles":[{"slug":"Gormon-Tyrell-13186","title":"Gormon Tyrell","description":"Ar Noy","body":"When the snows fall and the white winds blow, the lone wolf dies but the pack survives.","tagList":[],"createdAt":"2025-08-13T14:59:23.749Z","updatedAt":"2025-08-13T14:59:23.749Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Renfred-Rykker-13186","title":"Renfred Rykker","description":"Asshai","body":"And I have a tender spot in my heart for cripples and bastards and broken things.","tagList":[],"createdAt":"2025-08-13T14:59:22.894Z","updatedAt":"2025-08-13T14:59:22.894Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Liane-Vance-13186","title":"Liane Vance","description":"Asshai","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2025-08-13T14:58:45.208Z","updatedAt":"2025-08-13T14:58:45.208Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Theo-Frey-13186","title":"Theo Frey","description":"Ar Noy","body":"Power is a curious thing. Who lives, Who dies. Power resides where men believe it resides. It is a trick, A shadow on the wall.","tagList":[],"createdAt":"2025-08-13T14:57:27.335Z","updatedAt":"2025-08-13T14:57:27.335Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Hugo-Wull-13186","title":"Hugo Wull","description":"Mantarys","body":"Why is it that when one man builds a wall, the next man immediately needs to know what's on the other side?","tagList":[],"createdAt":"2025-08-13T08:31:38.858Z","updatedAt":"2025-08-13T08:31:38.858Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Bryan-of-Oldtown-13186","title":"Bryan of Oldtown","description":"Myr","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2025-08-13T08:31:37.446Z","updatedAt":"2025-08-13T08:31:37.446Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Grazhar-zo-Galare-13186","title":"Grazhar zo Galare","description":"Qarth","body":"Fear cuts deeper than swords.","tagList":[],"createdAt":"2025-08-13T08:12:57.407Z","updatedAt":"2025-08-13T08:12:57.407Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Falyse-Stokeworth-13186","title":"Falyse Stokeworth","description":"Astapor","body":"When you play a game of thrones you win or you die.","tagList":[],"createdAt":"2025-08-13T08:12:57.243Z","updatedAt":"2025-08-13T08:12:57.243Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Myria-Jordayne-13186","title":"Myria Jordayne","description":"Samyrian","body":"The North remembers.","tagList":[],"createdAt":"2025-08-13T08:12:56.931Z","updatedAt":"2025-08-13T08:12:56.931Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jommo-13186","title":"Jommo","description":"Ar Noy","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2025-08-13T08:08:52.277Z","updatedAt":"2025-08-13T08:08:52.277Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":32}
+
+09:59:27.162 [main] DEBUG com.intuit.karate - request:
+3 > DELETE https://conduit-api.bondaracademy.com/api/articles/Gormon-Tyrell-13186
+3 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA5NzE2MiwiZXhwIjoxNzYwMjgxMTYyfQ.-R1zec0p56nb91DoXye3Ydq1aeWLsbQCs9zQdZXPscQ
+3 > Host: conduit-api.bondaracademy.com
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+3 > Accept-Encoding: gzip,deflate
+
+
+09:59:27.874 [main] DEBUG com.intuit.karate - response time in milliseconds: 711
+3 < 204
+3 < x-powered-by: Express
+3 < vary: Origin
+3 < etag: W/"a-bAsFyilMr4Ra1hIU5PyoyFRunpI"
+3 < x-cloud-trace-context: 65e84589149e9009d9f00827a3bc5d00
+3 < date: Wed, 13 Aug 2025 14:59:25 GMT
+3 < content-type: text/html
+3 < server: Google Frontend
+
+
+09:59:27.876 [main] DEBUG com.intuit.karate - request:
+4 > GET https://conduit-api.bondaracademy.com/api/articles?limt=10&offset=0
+4 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA5NzE2MiwiZXhwIjoxNzYwMjgxMTYyfQ.-R1zec0p56nb91DoXye3Ydq1aeWLsbQCs9zQdZXPscQ
+4 > Host: conduit-api.bondaracademy.com
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+4 > Accept-Encoding: gzip,deflate
+
+
+09:59:28.906 [main] DEBUG com.intuit.karate - response time in milliseconds: 1029
+4 < 200
+4 < x-powered-by: Express
+4 < vary: Origin
+4 < content-type: application/json; charset=utf-8
+4 < etag: W/"1079-ZnwwwBW/wnj9kaEqeP+vIsZ8nH4"
+4 < x-cloud-trace-context: 182d13d55c2bbc08be160e651aaca6cd
+4 < date: Wed, 13 Aug 2025 14:59:26 GMT
+4 < server: Google Frontend
+4 < Content-Length: 4217
+{"articles":[{"slug":"Renfred-Rykker-13186","title":"Renfred Rykker","description":"Asshai","body":"And I have a tender spot in my heart for cripples and bastards and broken things.","tagList":[],"createdAt":"2025-08-13T14:59:22.894Z","updatedAt":"2025-08-13T14:59:22.894Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Liane-Vance-13186","title":"Liane Vance","description":"Asshai","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2025-08-13T14:58:45.208Z","updatedAt":"2025-08-13T14:58:45.208Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Theo-Frey-13186","title":"Theo Frey","description":"Ar Noy","body":"Power is a curious thing. Who lives, Who dies. Power resides where men believe it resides. It is a trick, A shadow on the wall.","tagList":[],"createdAt":"2025-08-13T14:57:27.335Z","updatedAt":"2025-08-13T14:57:27.335Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Hugo-Wull-13186","title":"Hugo Wull","description":"Mantarys","body":"Why is it that when one man builds a wall, the next man immediately needs to know what's on the other side?","tagList":[],"createdAt":"2025-08-13T08:31:38.858Z","updatedAt":"2025-08-13T08:31:38.858Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Bryan-of-Oldtown-13186","title":"Bryan of Oldtown","description":"Myr","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2025-08-13T08:31:37.446Z","updatedAt":"2025-08-13T08:31:37.446Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Grazhar-zo-Galare-13186","title":"Grazhar zo Galare","description":"Qarth","body":"Fear cuts deeper than swords.","tagList":[],"createdAt":"2025-08-13T08:12:57.407Z","updatedAt":"2025-08-13T08:12:57.407Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Falyse-Stokeworth-13186","title":"Falyse Stokeworth","description":"Astapor","body":"When you play a game of thrones you win or you die.","tagList":[],"createdAt":"2025-08-13T08:12:57.243Z","updatedAt":"2025-08-13T08:12:57.243Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Myria-Jordayne-13186","title":"Myria Jordayne","description":"Samyrian","body":"The North remembers.","tagList":[],"createdAt":"2025-08-13T08:12:56.931Z","updatedAt":"2025-08-13T08:12:56.931Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jommo-13186","title":"Jommo","description":"Ar Noy","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2025-08-13T08:08:52.277Z","updatedAt":"2025-08-13T08:08:52.277Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Rymolf-13186","title":"Rymolf","description":"Ar Noy","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2025-08-13T08:08:30.309Z","updatedAt":"2025-08-13T08:08:30.309Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":31}
+
+09:59:29.257 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:59:29.259 [main] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA5NzE2MiwiZXhwIjoxNzYwMjgxMTYyfQ.-R1zec0p56nb91DoXye3Ydq1aeWLsbQCs9zQdZXPscQ
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+09:59:30.009 [main] DEBUG com.intuit.karate - response time in milliseconds: 749
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"65-XAqp9RO5/GurIdusYmbGg8NPW48"
+1 < x-cloud-trace-context: 66d170a05f987da0bef74b7ecb297d66
+1 < date: Wed, 13 Aug 2025 14:59:27 GMT
+1 < server: Google Frontend
+1 < Content-Length: 101
+{"tags":["Test","Git","YouTube","Zoom","Blog","Bondar Academy","Enroll","Exam","Community","GitHub"]}
+
+09:59:30.021 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:59:30.030 [main] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/articles?limt=10&offset=0
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA5NzE2MiwiZXhwIjoxNzYwMjgxMTYyfQ.-R1zec0p56nb91DoXye3Ydq1aeWLsbQCs9zQdZXPscQ
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+09:59:30.739 [main] DEBUG com.intuit.karate - response time in milliseconds: 708
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"1079-ZnwwwBW/wnj9kaEqeP+vIsZ8nH4"
+1 < x-cloud-trace-context: c98fbfe407e5f70f3c808a1c90b6a725
+1 < date: Wed, 13 Aug 2025 14:59:28 GMT
+1 < server: Google Frontend
+1 < Content-Length: 4217
+{"articles":[{"slug":"Renfred-Rykker-13186","title":"Renfred Rykker","description":"Asshai","body":"And I have a tender spot in my heart for cripples and bastards and broken things.","tagList":[],"createdAt":"2025-08-13T14:59:22.894Z","updatedAt":"2025-08-13T14:59:22.894Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Liane-Vance-13186","title":"Liane Vance","description":"Asshai","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2025-08-13T14:58:45.208Z","updatedAt":"2025-08-13T14:58:45.208Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Theo-Frey-13186","title":"Theo Frey","description":"Ar Noy","body":"Power is a curious thing. Who lives, Who dies. Power resides where men believe it resides. It is a trick, A shadow on the wall.","tagList":[],"createdAt":"2025-08-13T14:57:27.335Z","updatedAt":"2025-08-13T14:57:27.335Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Hugo-Wull-13186","title":"Hugo Wull","description":"Mantarys","body":"Why is it that when one man builds a wall, the next man immediately needs to know what's on the other side?","tagList":[],"createdAt":"2025-08-13T08:31:38.858Z","updatedAt":"2025-08-13T08:31:38.858Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Bryan-of-Oldtown-13186","title":"Bryan of Oldtown","description":"Myr","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2025-08-13T08:31:37.446Z","updatedAt":"2025-08-13T08:31:37.446Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Grazhar-zo-Galare-13186","title":"Grazhar zo Galare","description":"Qarth","body":"Fear cuts deeper than swords.","tagList":[],"createdAt":"2025-08-13T08:12:57.407Z","updatedAt":"2025-08-13T08:12:57.407Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Falyse-Stokeworth-13186","title":"Falyse Stokeworth","description":"Astapor","body":"When you play a game of thrones you win or you die.","tagList":[],"createdAt":"2025-08-13T08:12:57.243Z","updatedAt":"2025-08-13T08:12:57.243Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Myria-Jordayne-13186","title":"Myria Jordayne","description":"Samyrian","body":"The North remembers.","tagList":[],"createdAt":"2025-08-13T08:12:56.931Z","updatedAt":"2025-08-13T08:12:56.931Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jommo-13186","title":"Jommo","description":"Ar Noy","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2025-08-13T08:08:52.277Z","updatedAt":"2025-08-13T08:08:52.277Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Rymolf-13186","title":"Rymolf","description":"Ar Noy","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2025-08-13T08:08:30.309Z","updatedAt":"2025-08-13T08:08:30.309Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":31}
+
+09:59:30.866 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:59:30.940 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA5NzE2MiwiZXhwIjoxNzYwMjgxMTYyfQ.-R1zec0p56nb91DoXye3Ydq1aeWLsbQCs9zQdZXPscQ
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 89
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"jade21@test.com","password":"12345alv","username":"lesley.vandervort"}}
+
+09:59:31.624 [main] DEBUG com.intuit.karate - response time in milliseconds: 682
+1 < 422
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"2f-BJEnYqgmLwV4NGkXB9OccFtans4"
+1 < x-cloud-trace-context: 81a85116f387bb98eb9c4163b9fc137e
+1 < date: Wed, 13 Aug 2025 14:59:29 GMT
+1 < server: Google Frontend
+1 < Content-Length: 47
+{"errors":{"email":["has already been taken"]}}
+
+09:59:31.628 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/SignUp.feature:24
+Then status 201
+status code was: 422, expected: 201, response time in milliseconds: 682, url: https://conduit-api.bondaracademy.com/api/users, response: 
+{"errors":{"email":["has already been taken"]}}
+classpath:conduitApp/feature/SignUp.feature:24
+10:04:15.007 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+10:04:15.541 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:04:15.546 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+10:04:15.742 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 65
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"pruebakarate@test.com","password":"karate123"}}
+
+10:04:16.631 [main] DEBUG com.intuit.karate - response time in milliseconds: 887
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"13e-/H+/rzXyR6ITWx1AZzEXvJJUzHg"
+1 < x-cloud-trace-context: 87e0b27d0c889790891d15ab908bbe4f;o=1
+1 < date: Wed, 13 Aug 2025 15:04:14 GMT
+1 < server: Google Frontend
+1 < Content-Length: 318
+{"user":{"email":"pruebakarate@test.com","username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA5NzQ1NCwiZXhwIjoxNzYwMjgxNDU0fQ.FGJNeGqp0BTgKBjdKszl4DC-I3DppAQXHAj01AWGBWU"}}
+
+10:04:16.636 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+10:04:16.738 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/articles
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA5NzQ1NCwiZXhwIjoxNzYwMjgxNDU0fQ.FGJNeGqp0BTgKBjdKszl4DC-I3DppAQXHAj01AWGBWU
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 174
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"article":{"title":"Loreza Sand","description":"White Harbor","body":"When the snows fall and the white winds blow, the lone wolf dies but the pack survives.","tagList":[]}}
+
+10:04:17.571 [main] DEBUG com.intuit.karate - response time in milliseconds: 832
+1 < 201
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"1c7-xqaH2f3QpXb6dkkMKPZNW2apPhc"
+1 < x-cloud-trace-context: 695f8273c69f38a7b0f4cbdd93f090dd
+1 < date: Wed, 13 Aug 2025 15:04:15 GMT
+1 < server: Google Frontend
+1 < Content-Length: 455
+{"article":{"slug":"Loreza-Sand-13186","title":"Loreza Sand","description":"White Harbor","body":"When the snows fall and the white winds blow, the lone wolf dies but the pack survives.","tagList":[],"createdAt":"2025-08-13T15:04:15.038Z","updatedAt":"2025-08-13T15:04:15.038Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}}
+
+10:04:17.588 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:04:17.611 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/articles
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA5NzQ1NCwiZXhwIjoxNzYwMjgxNDU0fQ.FGJNeGqp0BTgKBjdKszl4DC-I3DppAQXHAj01AWGBWU
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 152
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"article":{"title":"Jeyne Waters","description":"Oros","body":"Some old wounds never truly heal, and bleed again at the slightest word.","tagList":[]}}
+
+10:04:18.476 [main] DEBUG com.intuit.karate - response time in milliseconds: 864
+1 < 201
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"1b2-0qpCLyU4fLYGiPQVi8EQR4I6f2g"
+1 < x-cloud-trace-context: b31463fa979d7978b40eafbbc3e29552
+1 < date: Wed, 13 Aug 2025 15:04:16 GMT
+1 < server: Google Frontend
+1 < Content-Length: 434
+{"article":{"slug":"Jeyne-Waters-13186","title":"Jeyne Waters","description":"Oros","body":"Some old wounds never truly heal, and bleed again at the slightest word.","tagList":[],"createdAt":"2025-08-13T15:04:15.962Z","updatedAt":"2025-08-13T15:04:15.962Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}}
+
+10:04:18.485 [main] DEBUG com.intuit.karate - request:
+2 > GET https://conduit-api.bondaracademy.com/api/articles?limt=10&offset=0
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA5NzQ1NCwiZXhwIjoxNzYwMjgxNDU0fQ.FGJNeGqp0BTgKBjdKszl4DC-I3DppAQXHAj01AWGBWU
+2 > Host: conduit-api.bondaracademy.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+
+
+10:04:19.492 [main] DEBUG com.intuit.karate - response time in milliseconds: 1005
+2 < 200
+2 < x-powered-by: Express
+2 < vary: Origin
+2 < content-type: application/json; charset=utf-8
+2 < etag: W/"10e0-I8YMlIryHxI9Sh7KfZheHMOBiyI"
+2 < x-cloud-trace-context: abdf6fc78c60ab57a8d96132c864abfe
+2 < date: Wed, 13 Aug 2025 15:04:17 GMT
+2 < server: Google Frontend
+2 < Content-Length: 4320
+{"articles":[{"slug":"Jeyne-Waters-13186","title":"Jeyne Waters","description":"Oros","body":"Some old wounds never truly heal, and bleed again at the slightest word.","tagList":[],"createdAt":"2025-08-13T15:04:15.962Z","updatedAt":"2025-08-13T15:04:15.962Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Loreza-Sand-13186","title":"Loreza Sand","description":"White Harbor","body":"When the snows fall and the white winds blow, the lone wolf dies but the pack survives.","tagList":[],"createdAt":"2025-08-13T15:04:15.038Z","updatedAt":"2025-08-13T15:04:15.038Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Renfred-Rykker-13186","title":"Renfred Rykker","description":"Asshai","body":"And I have a tender spot in my heart for cripples and bastards and broken things.","tagList":[],"createdAt":"2025-08-13T14:59:22.894Z","updatedAt":"2025-08-13T14:59:22.894Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Liane-Vance-13186","title":"Liane Vance","description":"Asshai","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2025-08-13T14:58:45.208Z","updatedAt":"2025-08-13T14:58:45.208Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Theo-Frey-13186","title":"Theo Frey","description":"Ar Noy","body":"Power is a curious thing. Who lives, Who dies. Power resides where men believe it resides. It is a trick, A shadow on the wall.","tagList":[],"createdAt":"2025-08-13T14:57:27.335Z","updatedAt":"2025-08-13T14:57:27.335Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Hugo-Wull-13186","title":"Hugo Wull","description":"Mantarys","body":"Why is it that when one man builds a wall, the next man immediately needs to know what's on the other side?","tagList":[],"createdAt":"2025-08-13T08:31:38.858Z","updatedAt":"2025-08-13T08:31:38.858Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Bryan-of-Oldtown-13186","title":"Bryan of Oldtown","description":"Myr","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2025-08-13T08:31:37.446Z","updatedAt":"2025-08-13T08:31:37.446Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Grazhar-zo-Galare-13186","title":"Grazhar zo Galare","description":"Qarth","body":"Fear cuts deeper than swords.","tagList":[],"createdAt":"2025-08-13T08:12:57.407Z","updatedAt":"2025-08-13T08:12:57.407Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Falyse-Stokeworth-13186","title":"Falyse Stokeworth","description":"Astapor","body":"When you play a game of thrones you win or you die.","tagList":[],"createdAt":"2025-08-13T08:12:57.243Z","updatedAt":"2025-08-13T08:12:57.243Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Myria-Jordayne-13186","title":"Myria Jordayne","description":"Samyrian","body":"The North remembers.","tagList":[],"createdAt":"2025-08-13T08:12:56.931Z","updatedAt":"2025-08-13T08:12:56.931Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":33}
+
+10:04:19.500 [main] DEBUG com.intuit.karate - request:
+3 > DELETE https://conduit-api.bondaracademy.com/api/articles/Jeyne-Waters-13186
+3 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA5NzQ1NCwiZXhwIjoxNzYwMjgxNDU0fQ.FGJNeGqp0BTgKBjdKszl4DC-I3DppAQXHAj01AWGBWU
+3 > Host: conduit-api.bondaracademy.com
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+3 > Accept-Encoding: gzip,deflate
+
+
+10:04:20.239 [main] DEBUG com.intuit.karate - response time in milliseconds: 738
+3 < 204
+3 < x-powered-by: Express
+3 < vary: Origin
+3 < etag: W/"a-bAsFyilMr4Ra1hIU5PyoyFRunpI"
+3 < x-cloud-trace-context: 322ff5a2b6846d098a7f1f0b4ec2fc04
+3 < date: Wed, 13 Aug 2025 15:04:17 GMT
+3 < content-type: text/html
+3 < server: Google Frontend
+
+
+10:04:20.244 [main] DEBUG com.intuit.karate - request:
+4 > GET https://conduit-api.bondaracademy.com/api/articles?limt=10&offset=0
+4 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA5NzQ1NCwiZXhwIjoxNzYwMjgxNDU0fQ.FGJNeGqp0BTgKBjdKszl4DC-I3DppAQXHAj01AWGBWU
+4 > Host: conduit-api.bondaracademy.com
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+4 > Accept-Encoding: gzip,deflate
+
+
+10:04:21.111 [main] DEBUG com.intuit.karate - response time in milliseconds: 866
+4 < 200
+4 < x-powered-by: Express
+4 < vary: Origin
+4 < content-type: application/json; charset=utf-8
+4 < etag: W/"10c4-PRDwOPEf+2giHGymYDodhMUEFe4"
+4 < x-cloud-trace-context: 5c462aa6a56a4f92784d01e4261346cd
+4 < date: Wed, 13 Aug 2025 15:04:18 GMT
+4 < server: Google Frontend
+4 < Content-Length: 4292
+{"articles":[{"slug":"Loreza-Sand-13186","title":"Loreza Sand","description":"White Harbor","body":"When the snows fall and the white winds blow, the lone wolf dies but the pack survives.","tagList":[],"createdAt":"2025-08-13T15:04:15.038Z","updatedAt":"2025-08-13T15:04:15.038Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Renfred-Rykker-13186","title":"Renfred Rykker","description":"Asshai","body":"And I have a tender spot in my heart for cripples and bastards and broken things.","tagList":[],"createdAt":"2025-08-13T14:59:22.894Z","updatedAt":"2025-08-13T14:59:22.894Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Liane-Vance-13186","title":"Liane Vance","description":"Asshai","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2025-08-13T14:58:45.208Z","updatedAt":"2025-08-13T14:58:45.208Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Theo-Frey-13186","title":"Theo Frey","description":"Ar Noy","body":"Power is a curious thing. Who lives, Who dies. Power resides where men believe it resides. It is a trick, A shadow on the wall.","tagList":[],"createdAt":"2025-08-13T14:57:27.335Z","updatedAt":"2025-08-13T14:57:27.335Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Hugo-Wull-13186","title":"Hugo Wull","description":"Mantarys","body":"Why is it that when one man builds a wall, the next man immediately needs to know what's on the other side?","tagList":[],"createdAt":"2025-08-13T08:31:38.858Z","updatedAt":"2025-08-13T08:31:38.858Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Bryan-of-Oldtown-13186","title":"Bryan of Oldtown","description":"Myr","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2025-08-13T08:31:37.446Z","updatedAt":"2025-08-13T08:31:37.446Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Grazhar-zo-Galare-13186","title":"Grazhar zo Galare","description":"Qarth","body":"Fear cuts deeper than swords.","tagList":[],"createdAt":"2025-08-13T08:12:57.407Z","updatedAt":"2025-08-13T08:12:57.407Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Falyse-Stokeworth-13186","title":"Falyse Stokeworth","description":"Astapor","body":"When you play a game of thrones you win or you die.","tagList":[],"createdAt":"2025-08-13T08:12:57.243Z","updatedAt":"2025-08-13T08:12:57.243Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Myria-Jordayne-13186","title":"Myria Jordayne","description":"Samyrian","body":"The North remembers.","tagList":[],"createdAt":"2025-08-13T08:12:56.931Z","updatedAt":"2025-08-13T08:12:56.931Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jommo-13186","title":"Jommo","description":"Ar Noy","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2025-08-13T08:08:52.277Z","updatedAt":"2025-08-13T08:08:52.277Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":32}
+
+10:04:21.460 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:04:21.463 [main] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/tags
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA5NzQ1NCwiZXhwIjoxNzYwMjgxNDU0fQ.FGJNeGqp0BTgKBjdKszl4DC-I3DppAQXHAj01AWGBWU
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+10:04:22.210 [main] DEBUG com.intuit.karate - response time in milliseconds: 746
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"65-XAqp9RO5/GurIdusYmbGg8NPW48"
+1 < x-cloud-trace-context: c554b7fd5518951e6bdd88b5e6243322
+1 < date: Wed, 13 Aug 2025 15:04:19 GMT
+1 < server: Google Frontend
+1 < Content-Length: 101
+{"tags":["Test","Git","YouTube","Zoom","Blog","Bondar Academy","Enroll","Exam","Community","GitHub"]}
+
+10:04:22.224 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:04:22.233 [main] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/articles?limt=10&offset=0
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA5NzQ1NCwiZXhwIjoxNzYwMjgxNDU0fQ.FGJNeGqp0BTgKBjdKszl4DC-I3DppAQXHAj01AWGBWU
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+10:04:22.916 [main] DEBUG com.intuit.karate - response time in milliseconds: 682
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"10c4-PRDwOPEf+2giHGymYDodhMUEFe4"
+1 < x-cloud-trace-context: f80086557660d383791680c088ab9de3
+1 < date: Wed, 13 Aug 2025 15:04:20 GMT
+1 < server: Google Frontend
+1 < Content-Length: 4292
+{"articles":[{"slug":"Loreza-Sand-13186","title":"Loreza Sand","description":"White Harbor","body":"When the snows fall and the white winds blow, the lone wolf dies but the pack survives.","tagList":[],"createdAt":"2025-08-13T15:04:15.038Z","updatedAt":"2025-08-13T15:04:15.038Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Renfred-Rykker-13186","title":"Renfred Rykker","description":"Asshai","body":"And I have a tender spot in my heart for cripples and bastards and broken things.","tagList":[],"createdAt":"2025-08-13T14:59:22.894Z","updatedAt":"2025-08-13T14:59:22.894Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Liane-Vance-13186","title":"Liane Vance","description":"Asshai","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2025-08-13T14:58:45.208Z","updatedAt":"2025-08-13T14:58:45.208Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Theo-Frey-13186","title":"Theo Frey","description":"Ar Noy","body":"Power is a curious thing. Who lives, Who dies. Power resides where men believe it resides. It is a trick, A shadow on the wall.","tagList":[],"createdAt":"2025-08-13T14:57:27.335Z","updatedAt":"2025-08-13T14:57:27.335Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Hugo-Wull-13186","title":"Hugo Wull","description":"Mantarys","body":"Why is it that when one man builds a wall, the next man immediately needs to know what's on the other side?","tagList":[],"createdAt":"2025-08-13T08:31:38.858Z","updatedAt":"2025-08-13T08:31:38.858Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Bryan-of-Oldtown-13186","title":"Bryan of Oldtown","description":"Myr","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2025-08-13T08:31:37.446Z","updatedAt":"2025-08-13T08:31:37.446Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Grazhar-zo-Galare-13186","title":"Grazhar zo Galare","description":"Qarth","body":"Fear cuts deeper than swords.","tagList":[],"createdAt":"2025-08-13T08:12:57.407Z","updatedAt":"2025-08-13T08:12:57.407Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Falyse-Stokeworth-13186","title":"Falyse Stokeworth","description":"Astapor","body":"When you play a game of thrones you win or you die.","tagList":[],"createdAt":"2025-08-13T08:12:57.243Z","updatedAt":"2025-08-13T08:12:57.243Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Myria-Jordayne-13186","title":"Myria Jordayne","description":"Samyrian","body":"The North remembers.","tagList":[],"createdAt":"2025-08-13T08:12:56.931Z","updatedAt":"2025-08-13T08:12:56.931Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jommo-13186","title":"Jommo","description":"Ar Noy","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2025-08-13T08:08:52.277Z","updatedAt":"2025-08-13T08:08:52.277Z","favorited":false,"favoritesCount":0,"author":{"username":"Alvariytomyg","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":32}
+
+10:04:22.992 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:04:23.034 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxMzE4Nn0sImlhdCI6MTc1NTA5NzQ1NCwiZXhwIjoxNzYwMjgxNDU0fQ.FGJNeGqp0BTgKBjdKszl4DC-I3DppAQXHAj01AWGBWU
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 87
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"otto64@test.com","password":"12345alv","username":"fabiola.jenkins"}}
+
+10:04:23.802 [main] DEBUG com.intuit.karate - response time in milliseconds: 768
+1 < 201
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"146-ywFJG829qqPJzcXTL5CSa/fM0dA"
+1 < x-cloud-trace-context: 2aa5b4933d44665aaa908c0b743a7d60
+1 < date: Wed, 13 Aug 2025 15:04:21 GMT
+1 < server: Google Frontend
+1 < Content-Length: 326
+{"user":{"id":31889,"email":"otto64@test.com","username":"fabiola.jenkins","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozMTg4OX0sImlhdCI6MTc1NTA5NzQ2MSwiZXhwIjoxNzYwMjgxNDYxfQ.kp8Zx9hdQ5VmQqkjAC1IDYMnC-87zbdG7HljzMjKDuo"}}
+

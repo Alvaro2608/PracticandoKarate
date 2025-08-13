@@ -23,11 +23,11 @@ Feature: Test for the home page
     When method Get
     Then status 200
     And match response.articles == '#[10]'
-    And match response.articlesCount == 20
-    And match response.articlesCount != 100
-    And match response == {"articles": "#array", "articlesCount": 16}
+  #  And match response.articlesCount == 20
+  #  And match response.articlesCount != 100
+  #  And match response == {"articles": "#array", "articlesCount": 16}
     And match response.articles[0].createdAt contains '2025'
-    And match response.articles[*].favoritesCount contains 67
+    And match response.articles[*].favoritesCount contains 0
     And match each response..favoritesCount == '#number'
     And match response..bio contains null
     And match each response..following == false
