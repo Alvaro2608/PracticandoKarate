@@ -13,8 +13,8 @@ function fn() {
     config.userPassword = 'karate123'
     }
   if (env == 'qa') {
-    config.userEmail = 'pruebakarate2@test.com'
-    config.userPassword = 'karate456'
+    config.userEmail = 'pruebakarate26@test.com'
+    config.userPassword = '12345alv'
   }
 
   var accessToken = karate.callSingle('classpath:helpers/CreateToken.feature', config).authToken
